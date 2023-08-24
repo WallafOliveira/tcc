@@ -11,8 +11,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    
-
     <BrowserRouter>
       <Routes>
        <Route path="/">
@@ -21,7 +19,6 @@ root.render(
              <Route path="login" element={ <Login/> } />
              <Route path="cadpais" element={ <Cadpais/> } />
              <Route path="materias" element={ <Materia/> } />
-             
        </Route>
       </Routes>
     </BrowserRouter>
