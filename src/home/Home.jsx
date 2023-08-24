@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 //import Cadastro from "../cadastro/Cadastro";
 
-import "./App.css"; // Corrija o caminho para o arquivo CSS
+import "./App.css"; 
 
 function Home() {
 
@@ -20,9 +20,7 @@ function Home() {
         <ul> 
           
           <button  className="li" onClick={ () => { navigate('cadpais') } }> Area dos pais</button>
-          
           <button className="li"  onClick={ () => { navigate('login') } }> Login</button>
-
           <button className="li" onClick={ () => { navigate('cadastro') } } > Cadastro</button> 
   
 
