@@ -25,11 +25,11 @@ function Home() {
       </nav>
 
       <div className="conteudo">
-        <h1 class="title">Quer aprender de maneira interativa?</h1>
+        <h1 id="title">Quer aprender de maneira interativa?</h1>
         <img className="logo2" src={logo2} alt='Eduquiz'/>  
         
         <div className="sobre">
-        <h1 class="title">Sobre</h1>
+        <h1 id="pTitle">Sobre</h1>
         <br/>
         <p class="text">
         Recursos interativos: Tornamos a aprendizagem divertida e envolvente para as crianças. Com elementos visuais atraentes, 
