@@ -1,0 +1,99 @@
+*{ 
+    margin: 0%; 
+    padding: 0%; 
+    box-sizing: border-box;
+} 
+
+.logo{ 
+    width: 30%; 
+} 
+
+.container_login{ 
+    display:flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    padding-top: 8vh;  
+
+} 
+
+.title{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.email_password{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 2%;
+    margin-bottom:20px;
+} 
+.input{ 
+    width:43px; 
+    height: 5px;
+    padding:10px;
+    margin:5px;
+    font-size:15px;
+} 
+
+ .check_btn{ 
+    align-items: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10vh; 
+
+} 
+
+.checkbox-label{
+    font-size:17px;
+    font-weight: bold;
+}
+
+.checkbox-label input{
+    margin:10px;
+}
+
+.check_btn a{
+    color:blue;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.btn_cad_log{ 
+    padding-top: 3%; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+ .btn{ 
+    width: 12vh; 
+    height: 7vh;
+    margin:20px;
+    font-size:15px;
+    font-weight: bold;
+    background-color: #6466D1; 
+    color: #FFFFFF; 
+    border-radius: 50px;
+} 
+
+ .rede_login{ 
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-top: 2%; 
+    gap: 2%; 
+
+} 
+.logo_social{ 
+    width: 3%; 
+    height: 3%; 
+
+} 
+
+ 
+ 
+
+ 

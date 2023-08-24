@@ -1,0 +1,59 @@
+*{ 
+    margin: 0%; 
+    padding: 0%; 
+    box-sizing: border-box; 
+} 
+
+.logo{ 
+    width: 30%; 
+} 
+
+.container_cadastro_pais{ 
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    padding-top: 4vh;   
+}
+
+.email_password{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    padding-top: 2%; 
+} 
+
+.input{ 
+    width:43vh; 
+    height: 5vh; 
+} 
+
+.btn_cad{ 
+    padding-top: 3%; 
+} 
+
+.btn{ 
+    width: 12vh; 
+    height: 7vh; 
+    background-color: #6466D1; 
+    color: #FFFFFF; 
+} 
+
+.rede_login{ 
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: 2%; 
+    gap: 2%; 
+} 
+
+.logo_social{ 
+    width: 3%; 
+    height: 3%; 
+} 
+
+ 
+ 
+
+ 
