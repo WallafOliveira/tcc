@@ -1,0 +1,65 @@
+
+nav{
+    background-color: #126bda;
+}
+.logo{
+    width: 10%;
+   
+}
+
+.materia{
+    margin: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.logo2{
+    width: 50vh;
+    height: 50vh;
+}
+
+
+.btnMat{
+    background-color: #FF0000;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
+.btnPor{
+    background-color: #0088FF;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
+.btnHis{
+    background-color: #EBBE00;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
+.btnCie{
+    background-color: #00CC00;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
+.btnGeo{ 
+    background-color: #E75502;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
+.btnIn{
+    background-color: #CC00FF;
+    width: 15vh;
+    height: 10vh;
+    margin: 10vh;
+}
+
