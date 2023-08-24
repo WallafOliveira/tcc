@@ -15,13 +15,13 @@ function Materia() {
 
             <div>
 
-                <nav>
-                <img className="logo" src={logo} alt='Eduquiz'/> 
+                <nav className="cabeçalho">
+                <img className="logo" src={logo} alt='Eduquiz' onClick={ () => { navigate('/') }}/> 
                 </nav>
 
         <div className="materia">
 
-            <h1>Qual Matéria você quer aprender?</h1>
+            <h1 className="text_mat">Qual Matéria você quer aprender?</h1>
 
 
         <div>
