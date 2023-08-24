@@ -1,6 +1,6 @@
 import React from "react";
 import logo from './logo.png';
-import logo2 from './logo copy.png';
+import logo2 from './logo2.png';
 
 import "./materias.css"; // Corrija o caminho para o arquivo CSS
 
@@ -30,7 +30,7 @@ function Materia() {
 
           </div>
 
-        <div> 
+        <div className="meio"> 
           <button className="btnHis" onClick={ () => { navigate('cadastro') } } > Hístoria</button> 
 
           <img className="logo2" src={logo2} alt='Eduquiz'/> 

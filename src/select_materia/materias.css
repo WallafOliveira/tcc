@@ -8,17 +8,17 @@ nav{
 }
 
 .materia{
-    margin: 10vh;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   
 }
-.logo2{
+/* .logo2{
     width: 50vh;
     height: 50vh;
-}
+} */
 
 
 .btnMat{
@@ -42,6 +42,11 @@ nav{
     margin: 10vh;
 }
 
+.meio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btnCie{
     background-color: #00CC00;
     width: 15vh;
