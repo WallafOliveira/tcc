@@ -21,6 +21,7 @@ function Home() {
           <button className="li"  onClick={ () => { navigate('login') } }> Login</button>
           <button className="li" onClick={ () => { navigate('cadastro') } } > Cadastro</button> 
           <button className="li" onClick={ () => { navigate('materias') } } > materias</button> 
+          <button className="li" onClick={ () => { navigate('QuestaoPai') } } >questao_pai</button> 
         </ul> 
       </nav>
 
