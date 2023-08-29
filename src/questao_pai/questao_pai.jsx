@@ -19,27 +19,24 @@ function QuestaoPai() {
                 </nav>
             </div>
 
-            <div class="radio-group">
+            <div class="texto_questão">
 
-        <label class="radio-mat">
-            <input type="radio" name="opcao" value="Matematica"/>  Matematica  </label>
+                <input className="input_questao" type="text" placeholder="Escreva a questão para seu filho" />           
 
-        <label class="radio-pot">
-            <input type="radio" name="opcao" value="Portugues"/> Portugues </label>
+            </div>
 
-        <label class="radio-geo">
-            <input type="radio" name="opcao" value="Geografia"/>  Geografia </label>
+            <div className="select_materia_m">
 
-        <label class="radio-his">
-            <input type="radio" name="opcao" value="Hístoria"/> Hístoria  </label>
 
-        <label class="radio-cie">
-            <input type="radio" name="opcao" value="Ciência"/> Ciência  </label>
 
-        <label class="radio-ing">
-            <input type="radio" name="opcao" value="Inglês  "/> Inglês  </label>
+                <input type="radio"  name="fav_language" value="HTML"/>
+                  <label for="html">HTML</label>
 
-    </div>
+               <input type="radio" name="fav_language" value="CSS"/>
+                   <label for="css">CSS</label>
+
+
+            </div>
 
             </div>
 

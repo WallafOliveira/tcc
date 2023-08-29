@@ -8,173 +8,31 @@
    
 }
 
-.radio-group {
+.texto_questão{
     display: flex;
-    flex-direction: column;
+    padding-top: 2vh;
+    justify-content: center;
     align-items: center;
 }
 
-.radio-mat {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    margin: 10px;
+.input_questao{
+    width: 70vh;
+    height: 20vh;
+    font-size: 30px;
+    text-align: center;
 }
 
-.radio-por {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.radio-geo {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.radio-his {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    margin: 10px;
+.select_materia_m{
+    padding-top:3vh ;
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
 }
 
 input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+    width: 100px;
+    height: 50px;
+    border-radius: 0px;
 
-.radio-mat::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-mat::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-mat::before {
-    outline: none;
-}
-
-/* .radio-pot::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-pot::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-pot::before {
-    outline: none;
-} */
-
-.radio-geo::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-geo::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-geo::before {
-    outline: none;
-}
-
-.radio-his::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-his::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-his::before {
-    outline: none;
-}
-
-/* .radio-cie::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-cie::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-cie::before {
-    outline: none;
-} */
-
-/* 
-.radio-ing::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"]:checked + .radio-ing::before {
-    background-color: #333;
-    border-color: #555;
-}
-
-input[type="radio"]:focus + .radio-ing::before {
-    outline: none;
-} */
+    
+  }
