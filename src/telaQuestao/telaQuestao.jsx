@@ -3,13 +3,27 @@ import logo from './logo.png';
 import "./telaQuestao.css"; // Corrija o caminho para o arquivo CSS
 import { useNavigate } from "react-router-dom";
 
+
 function Questao() {
 
  const navigate = useNavigate();
 
+ const questoes = [
+	{
+		"texto_questao": "Quanto é 1+1 ?",
+		"img_questao": null
+	},
+ ]
     return (
+        questoes.map((questao) => {
 
-<div>
+            return (
+    
+        
+
+    <div>
+ 
+
   <div>
     <nav class="cabeçalho">
       <img class="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }}/>
@@ -17,7 +31,7 @@ function Questao() {
   </div>
 
     <div class="campo_text">
-    <h3 class="text_questao">Questao</h3>
+    <h3 class="text_questao">{questao.texto_questao}</h3>
     </div>
 
   <div class="buttonDiv">
@@ -31,9 +45,9 @@ function Questao() {
   <button class="btn_cont" onClick={() => { navigate('cadastro') }} >Continuar</button>
   </div>
 </div>
-
            
-
+)
+})
                     );
 }
 

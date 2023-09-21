@@ -21,16 +21,10 @@ function Cadastro() {
 
             {
 
-questoes.map((questao) => {
-    return (
-        <ul>
-            <li>{questao.id_questao}</li>
-            <li>{questao.texto_questao}</li>
-        </ul>
+       
         
-        
-    )
-})
+  
+
             }
 
         
