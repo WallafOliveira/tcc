@@ -6,6 +6,7 @@ import Login from'./login/login.jsx';
 import Cadpais from './cad_pais/cad_pais';
 import Materia from './select_materia/materias.jsx';
 import QuestaoPai from './questao_pai/questao_pai';
+import Questao from './telaQuestao/telaQuestao';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
              <Route path="cadpais" element={ <Cadpais/> } />
              <Route path="materias" element={ <Materia/> } />
              <Route path='QuestaoPai' element={<QuestaoPai/>}/>
+             <Route path='Questao' element={<Questao/>}/>
        </Route>
       </Routes>
     </BrowserRouter>
