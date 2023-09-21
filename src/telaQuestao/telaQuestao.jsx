@@ -1,9 +1,8 @@
 import React from "react";
 import logo from './logo.png';
-import "./questao_pai.css"; // Corrija o caminho para o arquivo CSS
 import { useNavigate } from "react-router-dom";
 
-function QuestaoPai() {
+function Questao() {
 
  const navigate = useNavigate();
 
@@ -17,7 +16,7 @@ function QuestaoPai() {
   </div>
 
   <div class="materia">
-    <h3 class="text_mat">Crie uma questão para seu filho!!</h3>
+    <h3 class="text_mat">Responda a pergunta</h3>
     <h3 class="text_mat">Escolha a matéria para começar a criar</h3>
   </div>
 
@@ -36,4 +35,4 @@ function QuestaoPai() {
                     );
 }
 
- export default QuestaoPai;
+ export default Questao;
