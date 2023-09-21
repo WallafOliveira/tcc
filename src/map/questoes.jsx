@@ -26,8 +26,8 @@ return
 questoes.map((questao) => {
     return (
         <ul>
-            <li>{questao.id_questao}</li>
             <li>{questao.texto_questao}</li>
+            <li>{questao.img_questao}</li>
         </ul>
         
         
