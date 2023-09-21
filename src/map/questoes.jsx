@@ -1,4 +1,4 @@
-const questoes = [
+/*const questoes = [
 	{
 		"texto_questao": "Quanto é 1+1 ?",
 		"img_questao": null
@@ -33,3 +33,4 @@ questoes.map((questao) => {
         
     )
 })
+
