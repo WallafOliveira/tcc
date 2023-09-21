@@ -9,12 +9,29 @@ function Cadastro() {
 
     const navigate = useNavigate();
 
+
+    
+
     return (
 
 
             <div class="container_cadastro_pais">
 
             <img className="logo" src={logo} alt='Eduquiz'/> 
+
+            {
+
+questoes.map((questao) => {
+    return (
+        <ul>
+            <li>{questao.id_questao}</li>
+            <li>{questao.texto_questao}</li>
+        </ul>
+        
+        
+    )
+})
+            }
 
         
                     <span>CADASTRAR-SE COMO RESPONSÁVEL</span>
