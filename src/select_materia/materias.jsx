@@ -14,7 +14,6 @@ function Materia() {
 
 
             <div>
-
                 <nav className="cabeçalho">
                 <img className="logo" src={logo} alt='Eduquiz' onClick={ () => { navigate('/') }}/> 
                 </nav>
@@ -27,24 +26,19 @@ function Materia() {
         <div>
 
           <button  className="btnMat" onClick={ () => { navigate('cadpais') } }> Matematica</button>
-          
           <button className="btnPor"  onClick={ () => { navigate('login') } }> Português</button>
 
           </div>
 
         <div className="meio"> 
           <button className="btnHis" onClick={ () => { navigate('cadastro') } } > Hístoria</button> 
-
           <img className="logo2" src={logo2} alt='Eduquiz'/> 
-
           <button className="btnCie" onClick={ () => { navigate('materias') } } > Ciências</button>
-
           </div>
 
          <div>
           
           <button className="btnGeo" onClick={ () => { navigate('materias') } } > Geografia</button> 
-
           <button className="btnIn" onClick={ () => { navigate('materias') } } > Inglês</button>
 
           </div>
