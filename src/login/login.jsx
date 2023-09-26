@@ -1,8 +1,6 @@
 import React from "react";
 import logo from './logo.png';
-
-import "./login.css"; // Corrija o caminho para o arquivo CSS
-
+import "./login.css";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -18,7 +16,7 @@ function Login() {
         <span class="title">Bem vindo de volta!</span> 
         <div class="email_password"> 
             <input class="input" type="email" placeholder="email@gmail.com" /> 
-            <input class="input"  type="password" placeholder="1234AB!" /> 
+            <input class="input"  type="password" placeholder="123ABC!" /> 
         </div> 
 
         <div class="check_btn"> 
