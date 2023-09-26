@@ -39,6 +39,9 @@ function Questao() {
     <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('materias') }}>ALternativa B</button>
     <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('materias') }}>ALternativa C</button>
     <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('cadastro') }}>ALternativa D</button>
+
+
+
   </div>
 
 <div class="btn_continuar">
