@@ -1,0 +1,49 @@
+#enunciadoDiv{
+    display:flex;
+    top:0;
+    justify-content: center;
+    margin:30px;
+}
+
+#enunciado{
+    width:40%;
+    height:auto;
+    background-color: transparent;
+    font-size: 40px;
+    border:transparent;
+    text-align: center;
+}
+
+#alternativasDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.alternativa{
+    margin:30px;
+    width: auto;
+    height:auto;
+    font-size: 20px;
+    border:transparent;
+    padding:10px;
+}
+
+#divButtonCriar{
+    display: flex;
+    justify-content: end;
+    margin-top:4%;
+    margin-right: 10%;
+}
+
+#criarButton{
+    font-size: 20px;
+    width:auto;
+    height:auto;
+    padding:10px;
+    border:transparent;
+    background-color: #126bda;
+    color: white;
+}
