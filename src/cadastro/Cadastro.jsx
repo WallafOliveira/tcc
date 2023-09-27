@@ -19,13 +19,6 @@ function Cadastro() {
 
             <img className="logo" src={logo} alt='Eduquiz'/> 
 
-            {
-
-       
-        
-  
-
-            }
 
         
                     <span>CADASTRAR-SE COMO RESPONSÁVEL</span>
