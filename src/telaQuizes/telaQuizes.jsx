@@ -17,17 +17,26 @@ function TelaQuizes() {
             <div id="body">
 
                 <div id="quizHeader">
-                    <text> Matéria </text>
-                    <button></button>
+                    <div id="titleDiv">
+                        <text> Matéria </text>
+                    </div>
+                    <div id="buttonDiv">
+                        <button id="buttonFilter" onClick={() => { navigate('/')}}>Filter</button>
+                    </div>
                 </div>
 
                 <div id="divLista">
                     <ul id="listaQuizes">
-                        <li class="listaItem"> Quiz 1 </li>
-                        <li class="listaItem"> Quiz 2 </li>
-                        <li class="listaItem"> Quiz 3 </li>
-                        <li class="listaItem"> Quiz 4 </li>
-                        <li class="listaItem"> Quiz 5 </li>
+                        <li class="listaItem"> <a href="">Questões de regência verbal de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de crase de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de virgula de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de literatura de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de análise sintática de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de interpretação de texto de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de pontuação de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de acentuação de vestibulares</a> </li>
+                        <li class="listaItem"> <a href="">Questões de anatomia de mamiferos de vestibulares</a> </li>
                     </ul>
                 </div>
 
