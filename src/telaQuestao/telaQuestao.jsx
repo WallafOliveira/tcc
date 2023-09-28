@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from './logo.png';
 import "./telaQuestao.css"; // Corrija o caminho para o arquivo CSS
 import { useNavigate } from "react-router-dom";
@@ -8,18 +8,36 @@ function Questao() {
 
  const navigate = useNavigate();
 
- const questoes = [
-	{
-		"texto_questao": "Quanto é 1+1 ?",
-		"img_questao": null
-	},
- ]
-    return (
-        questoes.map((questao) => {
+ const [questoes, setQuestoes] = useState(
+	[
+    {
+      "texto_questao": "Quanto é 1+1 ?",
+      "img_questao": null
+    },
+  ]
+);
 
-            return (
-    
-        
+const [alternativas, setAlternativas] = useState(
+  [
+      
+      {
+        "texto_alternativa": "2",
+      },
+      {
+        "texto_alternativa": "3",
+      },
+      {
+        "texto_alternativa": "4",
+      },
+      {
+        "texto_alternativa": "76",
+      },
+      
+
+  ]
+)
+    return (
+
 
     <div>
  
@@ -31,14 +49,33 @@ function Questao() {
   </div>
 
     <div class="campo_text">
-    <h3 class="text_questao">{questao.texto_questao}</h3>
+      {
+      questoes.map(questao => (
+        <h3 class="text_questao">{questao.texto_questao}</h3>
+      ))
+      }
+
     </div>
 
   <div class="buttonDiv">
-    <button style={{backgroundColor:"#00CC00"}} class="button" onClick={() => { navigate('materias') }}>ALternativa A</button>
-    <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('materias') }}>ALternativa B</button>
-    <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('materias') }}>ALternativa C</button>
-    <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('cadastro') }}>ALternativa D</button>
+
+
+    {alternativas.map(alternativa =>(
+
+
+
+      <button style={{backgroundColor:"#00CC00"}} class="button">{alternativa.texto_alternativa}</button>
+    ))
+    }
+
+
+{/*
+
+<button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('materias') }}>Alternativa B</button>
+<button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('cadastro') }}>Alternativa D</button>
+<button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('materias') }}>Alternativa C</button>
+*/
+}
 
 
 
@@ -49,9 +86,8 @@ function Questao() {
   </div>
 </div>
            
-)
-})
-                    );
+    )
+
 }
 
  export default Questao;
