@@ -1,0 +1,55 @@
+#quizHeader{
+    display:flex;
+    justify-content: center;
+    gap: 56%;
+    padding-block: 15px;
+}
+
+#titleDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    color:#126bda;
+}
+
+#buttonDiv{
+    display:flex;
+    justify-content:center;
+}
+
+#buttonFilter{
+   background-color: #126bda;
+   color: white;;
+   font-size: 20px;
+   padding:10px;
+   border: transparent;
+   border-radius: 15px;
+}
+
+#buttonFilter:hover{
+    cursor:pointer;
+}
+
+#divLista{
+    display: flex;
+    font-size: 25px;
+}
+
+#listaQuizes {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+    list-style-type: none;
+    padding-block:30px;
+    padding-inline:10%;
+
+}
+
+.listaItem{
+    background-color: #d9d9d9;
+    padding:10px;
+    border-radius: 20px;
+}
