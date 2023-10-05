@@ -30,7 +30,7 @@ const [alternativas, setAlternativas] = useState(
         "texto_alternativa": "4",
       },
       {
-        "texto_alternativa": "76",
+        "texto_alternativa": "1",
       },
       
 
@@ -82,7 +82,7 @@ const [alternativas, setAlternativas] = useState(
   </div>
 
 <div class="btn_continuar">
-  <button class="btn_cont" onClick={() => { navigate('cadastro') }} >Continuar</button>
+  <button class="btn_cont" onClick={() => { navigate('/') }} >Continuar</button>
   </div>
 </div>
            

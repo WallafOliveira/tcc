@@ -31,7 +31,7 @@ function Login() {
     
     <div class="btn_cad_log"> 
         <button class="btn" onClick={ () => { navigate('/') }} >Login</button> 
-        <button class="btn" onClick={ () => { navigate('/') }} >Cadastro</button> 
+        <button class="btn" onClick={ () => { navigate('/cadastro') }} >Cadastro</button> 
  
     </div> 
         <div class="rede_login"> 

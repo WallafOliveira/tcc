@@ -23,12 +23,12 @@ function QuestaoPai() {
   </div>
 
   <div id="buttonDiv" class="button-container">
-    <button style={{backgroundColor:"#00CC00"}} class="button" onClick={() => { navigate('criarQuestao') }}>CIÊNCIAS</button>
-    <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('criarQuestao') }}>GEOGRAFIA</button>
-    <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('criarQuestao') }}>INGLÊS</button>
-    <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('criarQuestao') }}>HISTÓRIA</button>
-    <button style={{backgroundColor:"#FF0000"}} class="button" onClick={() => { navigate('criarQuestao') }}>MATEMÁTICA</button>
-    <button style={{backgroundColor:"#0088FF"}} class="button" onClick={() => { navigate('criarQuestao') }}>PORTUGUÊS</button>
+    <button style={{backgroundColor:"#00CC00"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>CIÊNCIAS</button>
+    <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>GEOGRAFIA</button>
+    <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>INGLÊS</button>
+    <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>HISTÓRIA</button>
+    <button style={{backgroundColor:"#FF0000"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>MATEMÁTICA</button>
+    <button style={{backgroundColor:"#0088FF"}} class="button" onClick={() => { navigate('/CriarQuestao') }}>PORTUGUÊS</button>
 
   </div>
 </div>

@@ -63,5 +63,5 @@ function Home(){
 		]
 	);
 
-	return()	
+	/*return()*/
 }

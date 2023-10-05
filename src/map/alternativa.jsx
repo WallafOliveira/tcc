@@ -91,7 +91,7 @@
 	},
 ]
 
-return
+return(
 
 alternativas.map((alternativa) => {
     return (
@@ -103,3 +103,4 @@ alternativas.map((alternativa) => {
     )
 })
 
+*/
