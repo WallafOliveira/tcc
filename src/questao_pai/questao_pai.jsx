@@ -1,6 +1,7 @@
 import React from "react";
 import logo from './logo.png';
 import "./questao_pai.css"; // Corrija o caminho para o arquivo CSS
+
 import { useNavigate } from "react-router-dom";
 
 function QuestaoPai() {
@@ -22,12 +23,13 @@ function QuestaoPai() {
   </div>
 
   <div id="buttonDiv" class="button-container">
-    <button style={{backgroundColor:"#00CC00"}} class="button" onClick={() => { navigate('materias') }}>CIÊNCIAS</button>
-    <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('materias') }}>GEOGRAFIA</button>
-    <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('materias') }}>INGLÊS</button>
-    <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('cadastro') }}>HISTÓRIA</button>
-    <button style={{backgroundColor:"#FF0000"}} class="button" onClick={() => { navigate('cadpais') }}>MATEMÁTICA</button>
-    <button style={{backgroundColor:"#0088FF"}} class="button" onClick={() => { navigate('login') }}>PORTUGUÊS</button>
+    <button style={{backgroundColor:"#00CC00"}} class="button" onClick={() => { navigate('criarQuestao') }}>CIÊNCIAS</button>
+    <button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('criarQuestao') }}>GEOGRAFIA</button>
+    <button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('criarQuestao') }}>INGLÊS</button>
+    <button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('criarQuestao') }}>HISTÓRIA</button>
+    <button style={{backgroundColor:"#FF0000"}} class="button" onClick={() => { navigate('criarQuestao') }}>MATEMÁTICA</button>
+    <button style={{backgroundColor:"#0088FF"}} class="button" onClick={() => { navigate('criarQuestao') }}>PORTUGUÊS</button>
+
   </div>
 </div>
 
