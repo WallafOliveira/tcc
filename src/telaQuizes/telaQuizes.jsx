@@ -1,10 +1,11 @@
 import React, { useState } from "react"; // Importa React e useState para gerenciar o estado
 import logo from './logo.png'; // Importa uma imagem de logotipo
 import "./telaQuizes.css"; // Importa um arquivo de estilo CSS
-import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate da biblioteca react-router-dom para a navegação na aplicação
+import { useNavigate, useLocation } from "react-router-dom"; // Importa o hook useNavigate da biblioteca react-router-dom para a navegação na aplicação
 
 function TelaQuizes() {
     const navigate = useNavigate(); 
+    const location = useLocation();
 
     return (
         <div>
@@ -18,7 +19,7 @@ function TelaQuizes() {
 
                 <div id="quizHeader">
                     <div id="titleDiv">
-                        <text> Matéria </text>
+                        <text> {location.state.materia} </text>
                     </div>
                     <div id="buttonDiv">
                         <button id="buttonFilter" onClick={() => { navigate('/')}}>Filter</button>

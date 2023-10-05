@@ -8,7 +8,7 @@ import Materia from './select_materia/materias.jsx';
 import QuestaoPai from './questao_pai/questao_pai';
 import Questao from './telaQuestao/telaQuestao';
 import CriarQuestao from './criarQuestao/criarQuestao.jsx';
-import TelaQuizes from './telaQuizes/telaQuizes.jsx';
+import TelaQuizes from './telaQuizes/telaQuizes';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

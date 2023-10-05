@@ -2,6 +2,7 @@ import React from "react";
 import logo from './logo.png';
 import logo2 from './logo2.png';
 
+
 import "./materias.css"; // Corrija o caminho para o arquivo CSS
 
 import { useNavigate } from "react-router-dom";
@@ -25,21 +26,21 @@ function Materia() {
 
         <div>
 
-          <button  className="btnMat" onClick={ () => { navigate('cadpais') } }> Matematica</button>
-          <button className="btnPor"  onClick={ () => { navigate('login') } }> Português</button>
+          <button  className="btnMat" onClick={ () => { navigate('/telaQuizes', {state: {materia: "Matemática"}}) } }> Matematica</button>
+          <button className="btnPor"  onClick={ () => { navigate('/telaQuizes', {state: {materia: "Português"}}) } }> Português</button>
 
           </div>
 
         <div className="meio"> 
-          <button className="btnHis" onClick={ () => { navigate('cadastro') } } > Hístoria</button> 
+          <button className="btnHis" onClick={ () => { navigate('/telaQuizes' , {state: {materia: "História"}}) } } > Hístoria</button> 
           <img className="logo2" src={logo2} alt='Eduquiz'/> 
-          <button className="btnCie" onClick={ () => { navigate('materias') } } > Ciências</button>
+          <button className="btnCie" onClick={ () => { navigate('/telaQuizes', {state: {materia: "Ciências"}}) } } > Ciências</button>
           </div>
 
          <div>
           
-          <button className="btnGeo" onClick={ () => { navigate('materias') } } > Geografia</button> 
-          <button className="btnIn" onClick={ () => { navigate('materias') } } > Inglês</button>
+          <button className="btnGeo" onClick={ () => { navigate('/telaQuizes', {state: {materia: "Geografia"}}) } } > Geografia</button> 
+          <button className="btnIn" onClick={ () => { navigate('/telaQuizes', {state: {materia: "Inglês"}}) } } > Inglês</button>
 
           </div>
 
