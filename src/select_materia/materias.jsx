@@ -13,11 +13,11 @@ function Materia() {
       <div className="materia">
         <h1 className="text_mat">Qual Matéria você quer aprender?</h1>
         <div>
-          <button  className="btnMat" onClick={() => {navigate('/telaQuizes', {state: {materia: "Matemática"}})}}>Matematica</button>
+          <button  className="btnMat" onClick={() => {navigate('/telaQuizes', {state: {materia: "Matemática"}})}}>Matemática</button>
           <button className="btnPor"  onClick={ () => {navigate('/telaQuizes', {state: {materia: "Português"}})}}>Português</button>
         </div>
         <div className="meio"> 
-          <button className="btnHis" onClick={() => {navigate('/telaQuizes' , {state: {materia: "História"}})}} >Hístoria</button> 
+          <button className="btnHis" onClick={() => {navigate('/telaQuizes' , {state: {materia: "História"}})}} >História</button> 
           <img className="logo2" src={logo2} alt='Eduquiz'/> 
           <button className="btnCie" onClick={() => {navigate('/telaQuizes', {state: {materia: "Ciências"}})}} >Ciências</button>
         </div>
