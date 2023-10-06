@@ -17,13 +17,13 @@ function Home() {
       <nav className="botão">
         <img className="logo" src={logo} alt='Eduquiz'/> 
         <ul>
-          <button  className="li" onClick={ () => { navigate('cadpais') } }> Area dos pais</button>
-          <button className="li"  onClick={ () => { navigate('login') } }> Login</button>
-          <button className="li" onClick={ () => { navigate('cadastro') } } > Cadastro</button> 
-          <button className="li" onClick={ () => { navigate('materias') } } > materias</button> 
-          <button className="li" onClick={ () => { navigate('QuestaoPai') } } >questao_pai</button> 
-          <button className="li" onClick={ () => {navigate('CriarQuestao') } } > Criar Questão </button>
-          <button className="li" onClick={ () => {navigate('Questao') } } > Questão </button>
+          <button  className="li" onClick={ () => { navigate('/cadpais') } }> Area dos pais</button>
+          <button className="li"  onClick={ () => { navigate('/login') } }> Login</button>
+          <button className="li" onClick={ () => { navigate('/cadastro') } } > Cadastro</button> 
+          <button className="li" onClick={ () => { navigate('/materias') } } > materias</button> 
+          <button className="li" onClick={ () => { navigate('/QuestaoPai') } } >questao_pai</button> 
+          <button className="li" onClick={ () => {navigate('/CriarQuestao') } } > Criar Questão </button>
+          <button className="li" onClick={ () => {navigate('/Questao') } } > Questão </button>
           {/*<button className="li" onClick={ () => {navigate('telaQuizes') } } > Quizes </button>*/}
         </ul> 
       </nav>
