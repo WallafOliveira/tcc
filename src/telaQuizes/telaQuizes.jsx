@@ -28,16 +28,16 @@ function TelaQuizes() {
 
                 <div id="divLista">
                     <ul id="listaQuizes">
-                        <li class="listaItem"> <a href="">Questões de regência verbal de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de crase de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de virgula de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de literatura de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de análise sintática de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de interpretação de texto de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de pontuação de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de acentuação de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de anatomia de mamiferos de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de regência verbal de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de crase de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de virgula de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de literatura de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de análise sintática de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de interpretação de texto de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de pontuação de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de acentuação de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de anatomia de mamiferos de vestibulares</a> </li>
                     </ul>
                 </div>
 

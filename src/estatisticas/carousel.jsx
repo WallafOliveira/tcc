@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./carousel.css";
 import imagem1 from "./imagem1.jpg";
 import imagem2 from "./imagem2.jpg";
@@ -23,28 +23,36 @@ function Carousel() {
     setCurrentImage((currentImage - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    // Create an interval to call nextImage every 3 seconds (3000 milliseconds)
+    const interval = setInterval(nextImage, 2000);
+
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [currentImage]);
+
   return (
     <div className="bigone">
-        <text>Quizes Feitos</text>
-    <div className="carousel">
-        <button onClick={prevImage}> {'<'} </button>
+      <text className='textCarousel'>Quizes Feitos</text>
+      <div className="carousel">
+        <button className="btnCarousel" onClick={prevImage}> {'<'} </button>
 
-      <div id="images">
-        <div className="component">
-            <img src={images[(currentImage + images.length - 1) % images.length]} alt={`Image ${currentImage + 1}`} />
+        <div id="images">
+          <div className="component">
+            <img className='carouselPictures' src={images[(currentImage + images.length - 1) % images.length]} alt={`Image ${currentImage + 1}`} />
+          </div>
+
+          <div className="component">
+            <img className='carouselPictures' src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+          </div>
+
+          <div className="component">
+            <img className='carouselPictures' src={images[(currentImage + 1) % images.length]} alt={`Image ${currentImage + 2}`} />
+          </div>
         </div>
 
-        <div className="component">
-            <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
-        </div>
-
-        <div className="component">
-            <img src={images[(currentImage + 1) % images.length]} alt={`Image ${currentImage + 2}`} />
-        </div>
+        <button className="btnCarousel" onClick={nextImage}> {'>'} </button>
       </div>
-
-      <button onClick={nextImage}> {'>'} </button>
-    </div>
     </div>
   );
 }

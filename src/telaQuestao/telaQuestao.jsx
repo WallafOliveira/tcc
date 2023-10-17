@@ -43,37 +43,37 @@ const [alternativas, setAlternativas] = useState(
  
 
   <div>
-    <nav class="cabeçalho">
-      <img class="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }}/>
+    <nav className="cabeçalho">
+      <img className="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }}/>
     </nav>
   </div>
 
-    <div class="campo_text">
+    <div className="campo_text">
       {
       questoes.map(questao => (
-        <h3 class="text_questao">{questao.texto_questao}</h3>
+        <h3 className="text_questao">{questao.texto_questao}</h3>
       ))
       }
 
     </div>
 
-  <div class="buttonDiv">
+  <div className="buttonDiv">
 
 
     {alternativas.map(alternativa =>(
 
 
 
-      <button style={{backgroundColor:"#00CC00"}} class="button">{alternativa.texto_alternativa}</button>
+      <button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>
     ))
     }
 
 
 {/*
 
-<button style={{backgroundColor:"#E75502"}} class="button" onClick={() => { navigate('materias') }}>Alternativa B</button>
-<button style={{backgroundColor:"#EBBE00"}} class="button" onClick={() => { navigate('cadastro') }}>Alternativa D</button>
-<button style={{backgroundColor:"#CC00FF"}} class="button" onClick={() => { navigate('materias') }}>Alternativa C</button>
+<button style={{backgroundColor:"#E75502"}} className="button" onClick={() => { navigate('materias') }}>Alternativa B</button>
+<button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => { navigate('cadastro') }}>Alternativa D</button>
+<button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => { navigate('materias') }}>Alternativa C</button>
 */
 }
 
@@ -81,8 +81,8 @@ const [alternativas, setAlternativas] = useState(
 
   </div>
 
-<div class="btn_continuar">
-  <button class="btn_cont" onClick={() => { navigate('/') }} >Continuar</button>
+<div className="btn_continuar">
+  <button className="btn_cont" onClick={() => { navigate('/') }} >Continuar</button>
   </div>
 </div>
            
