@@ -9,6 +9,7 @@ import TelaQuizes from './telaQuizes/telaQuizes';
 import QuestaoPai from './questao_pai/questao_pai';
 import Materia from './select_materia/materias.jsx';
 import CriarQuestao from './criarQuestao/criarQuestao.jsx';
+import TelaEstatisticas from './estatisticas/telaEstatisticas';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,14 +20,15 @@ root.render(
       <Routes>
        <Route path="/">
             <Route index  element={<Home/>} /> 
-            <Route path="cadastro" element={<Cadastro/>} /> 
              <Route path="login" element={<Login/>} />
-             <Route path="cadpais" element={<Cadpais/>} />
-             <Route path="materias" element={<Materia/>} />
-             <Route path='QuestaoPai' element={<QuestaoPai/>} />
              <Route path='Questao' element={<Questao/>} />
-             <Route path='criarQuestao' element={<CriarQuestao/>} />
+             <Route path="cadpais" element={<Cadpais/>} />
+            <Route path="cadastro" element={<Cadastro/>} /> 
+             <Route path="materias" element={<Materia/>} />
              <Route path='telaQuizes' element={<TelaQuizes/>} />
+             <Route path='QuestaoPai' element={<QuestaoPai/>} />
+             <Route path='criarQuestao' element={<CriarQuestao/>} />
+             <Route path='estatisticas' element={<TelaEstatisticas/>} />
        </Route>
       </Routes>
     </BrowserRouter>
