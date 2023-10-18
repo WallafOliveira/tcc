@@ -25,7 +25,7 @@ function Carousel() {
 
   useEffect(() => {
     // Create an interval to call nextImage every 3 seconds (3000 milliseconds)
-    const interval = setInterval(nextImage, 2000);
+    const interval = setInterval(nextImage, 3000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(interval);

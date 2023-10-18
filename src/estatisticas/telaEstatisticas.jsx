@@ -21,18 +21,24 @@ function TelaEstatisticas() {
           <Carousel /> 
         </div>
 
-        <div id="evolucao">
+        <div id="evolucaoDiv">
           <h1 id="textoEvolucao"> Evolução </h1>
 
           <div id="container">
 
             <div id="quizFeitos">
-              <h1 id="tituloQuizFeitos"> Total de Quizes Feitos </h1>
+              <h1 id="tituloQuizFeitos"> Total de Quizes Feitos: </h1>
               <p id="numeroQuizes">?</p>
             </div>
 
             <div id="media">
               <h1 id="tituloMedia"> Média de Acertos </h1>
+              <div className="progress-bar">
+                <div className="progress-bar-all">
+                  <div className="progress-bar-fill" />
+                </div>
+                <text className="texto-progress-bar">%</text>
+              </div>
             </div>
           
           </div>
