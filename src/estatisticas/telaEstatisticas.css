@@ -1,7 +1,6 @@
 #carrossel{
     padding-block: 20px;
 }
-
 #evolucaoDiv{
     display: flex;
     justify-content: space-between;
@@ -10,14 +9,13 @@
     width: 100%;
     padding-block:20px;
     gap:10px;
+    height: 250px;
 }
-
 #textoEvolucao{
     font-size: 50px;
     font-weight:600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 #container{
     display: flex;
     flex-direction: row;
@@ -25,16 +23,47 @@
     gap:30%;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
-
-#quizFeitos{
+#quizFeitos, #media {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 100%;
+    width: 410px;
 }
-
 #numeroQuizes, #tituloQuizFeitos, #tituloMedia{
     font-size: 40px;
     font-weight: 500;
+}
+.progress-bar{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+}
+.progress-bar-all{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.progress-bar-fill{
+    width: inherit;
+    height: 100%;
+    border-radius: 17px;
+    background-color: #00FF00;
+}
+.texto-progress-bar{
+    font-size: 30px;    
+}
+#tituloDiv{
+    display: flex;
+    width: 100%;
+    text-align: start;
 }
