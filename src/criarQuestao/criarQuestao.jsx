@@ -59,7 +59,7 @@ function CriarQuestao() {
                 ))}
             </div>
             <div id="divButtonCriar">
-                  <button id="criarButton" onClick={ () => { navigate('/') }} > Criar </button>
+                  <button id="criarButton" onClick={ () => {window.location.reload() }} > Criar </button>
             </div>
         </div>
     );
