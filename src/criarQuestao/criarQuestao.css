@@ -1,49 +1,44 @@
 #enunciadoDiv{
-    display:flex;
     top:0;
-    justify-content: center;
     margin:30px;
+    display:flex;
+    justify-content: center;
 }
-
 #enunciado{
     width:40%;
     height:auto;
-    background-color: transparent;
     font-size: 40px;
     border:transparent;
     text-align: center;
+    background-color: transparent;
 }
-
 #alternativasDiv{
     display: flex;
+    padding-top: 80px;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 80px;
 }
-
 .alternativa{
-    margin:30px;
     width: auto;
+    margin:30px;
     height:auto;
+    padding:10px;
     font-size: 20px;
     border:transparent;
-    padding:10px;
 }
-
 #divButtonCriar{
     display: flex;
-    justify-content: end;
     margin-top:4%;
     margin-right: 10%;
+    justify-content: end;
 }
-
 #criarButton{
-    font-size: 20px;
     width:auto;
     height:auto;
     padding:10px;
+    color: white;
+    font-size: 20px;
     border:transparent;
     background-color: #126bda;
-    color: white;
 }

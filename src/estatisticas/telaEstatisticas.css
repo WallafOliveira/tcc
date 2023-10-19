@@ -2,14 +2,14 @@
     padding-block: 20px;
 }
 #evolucaoDiv{
+    gap:10px;
+    width: 100%;
+    height: 250px;
     display: flex;
-    justify-content: space-between;
+    padding-block:20px;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    padding-block:20px;
-    gap:10px;
-    height: 250px;
+    justify-content: space-between;
 }
 #textoEvolucao{
     font-size: 50px;
@@ -17,45 +17,45 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap:30%;
-    align-items: center;
+    gap: 30%;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #quizFeitos, #media {
+    width: 410px;
+    height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 410px;
 }
 #numeroQuizes, #tituloQuizFeitos, #tituloMedia{
     font-size: 40px;
     font-weight: 500;
 }
 .progress-bar{
-    display: flex;
     gap: 5%;
     width: 100%;
-    align-items: center;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
 .progress-bar-all{
-    display: flex;
     width: 80%;
     height: 100%;
-    border: 2px solid #000000;
-    border-radius: 20px;
+    display: flex;
     align-items: center;
+    border-radius: 20px;
+    border: 2px solid #000000;
     justify-content: space-between;
 }
 .progress-bar-fill{
-    width: inherit;
     height: 100%;
+    width: inherit;
     border-radius: 17px;
     background-color: #00FF00;
 }
@@ -63,7 +63,7 @@
     font-size: 30px;    
 }
 #tituloDiv{
-    display: flex;
     width: 100%;
+    display: flex;
     text-align: start;
 }

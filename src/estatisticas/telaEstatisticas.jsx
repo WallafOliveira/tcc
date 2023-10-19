@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import logo from './logo.png';
 import "./telaEstatisticas.css";
-import { useNavigate, useLocation } from "react-router-dom";
 import Carousel from "./carousel";
+import React, { useState } from "react";
+import {useNavigate, useLocation} from "react-router-dom";
 function TelaEstatisticas() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -10,7 +10,7 @@ function TelaEstatisticas() {
     <div>
       <div>
         <nav className="cabeçalho">
-          <img className="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }} />
+          <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}} />
         </nav>
       </div>
       <div id="body">
