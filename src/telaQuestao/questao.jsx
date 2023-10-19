@@ -1,9 +1,6 @@
 /*import React, {useState} from "react";
-
 function Questao() {
-
     const navigate = useNavigate();
-   
     const [questoes, setQuestoes] = useState(
         [
             {
@@ -44,5 +41,4 @@ function Questao() {
         ]
    );
 }
-
 export default Questao*/

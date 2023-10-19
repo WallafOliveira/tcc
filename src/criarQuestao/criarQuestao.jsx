@@ -34,7 +34,7 @@ function CriarQuestao() {
             <div>
                 {/* Cabeçalho com um logotipo clicável que navega para a página inicial */}
                 <nav className="cabeçalho">
-                    <img className="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }} />
+                    <img className="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/')}}/>
                 </nav>
             </div>
             <div id="enunciadoDiv">
@@ -55,7 +55,7 @@ function CriarQuestao() {
                 ))}
             </div>
             <div id="divButtonCriar">
-                  <button id="criarButton" onClick={ () => {window.location.reload() }} > Criar </button>
+                  <button id="criarButton" onClick={ () => {window.location.reload()}}> Criar </button>
             </div>
         </div>
     );

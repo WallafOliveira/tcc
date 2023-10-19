@@ -1,55 +1,47 @@
 #quizHeader{
-    display:flex;
-    justify-content: center;
     gap: 56%;
+    display:flex;
     padding-block: 15px;
+    justify-content: center;
 }
-
 #titleDiv{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 35px;
     color:#126bda;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
 #buttonDiv{
     display:flex;
     justify-content:center;
 }
-
 #buttonFilter{
-   background-color: #126bda;
-   color: white;;
-   font-size: 20px;
-   padding:10px;
-   border: transparent;
-   border-radius: 15px;
+    padding:10px;
+    color: white;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 15px;
+    background-color: #126bda;
 }
-
 #buttonFilter:hover{
     cursor:pointer;
 }
-
 #divLista{
     display: flex;
     font-size: 25px;
 }
-
 #listaQuizes {
-    display:flex;
-    flex-direction: column;
     gap:20px;
     width: 100%;
-    list-style-type: none;
+    display:flex;
     padding-block:30px;
     padding-inline:10%;
-
+    list-style-type: none;
+    flex-direction: column;
 }
-
 .listaItem{
-    background-color: #d9d9d9;
     padding:10px;
     border-radius: 20px;
+    background-color: #d9d9d9;
 }

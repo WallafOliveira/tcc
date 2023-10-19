@@ -7,7 +7,7 @@ function CadPais() {
     return (
         <div>
             <div class="container_cadastro_pais">
-                <img className="logo" src={logo} alt='Eduquiz'/>
+                <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
                 <span>CADASTRA-SE COMO RESPONSÁVEL</span>
                 <div class="email_password">
                     <input class="input" type="text" placeholder="Nome" />

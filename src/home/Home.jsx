@@ -1,38 +1,30 @@
+import "./App.css"; 
 import React from "react";
 import logo from './logo.png';
 import logo2 from './logotcc2.png'
-
 import { useNavigate } from "react-router-dom";
-
 //import Cadastro from "../cadastro/Cadastro";
-
-import "./App.css"; 
-
 function Home() {
-
   const navigate = useNavigate();
-
   return (
     <div> 
       <nav className="botão">
         <img className="logo" src={logo} alt='Eduquiz'/> 
         <ul>
-          <button  className="li" onClick={ () => { navigate('/cadpais') } }> Area dos pais</button>
-          <button className="li"  onClick={ () => { navigate('/login') } }> Login</button>
-          <button className="li" onClick={ () => { navigate('/cadastro') } } > Cadastro</button> 
-          <button className="li" onClick={ () => { navigate('/materias') } } > materias</button> 
-          <button className="li" onClick={ () => { navigate('/QuestaoPai') } } >questao_pai</button> 
-          <button className="li" onClick={ () => {navigate('/CriarQuestao') } } > Criar Questão </button>
-          <button className="li" onClick={ () => {navigate('/Questao') } } > Questão </button>
-          <button className="li" onClick={ () => {navigate('/estatisticas') } } > Estatísticas </button>
-          {/*<button className="li" onClick={ () => {navigate('telaQuizes') } } > Quizes </button>*/}
+          <button  className="li" onClick={ () => {navigate('/cadpais')}}>Area dos pais</button>
+          <button className="li"  onClick={ () => {navigate('/login')}}> Login</button>
+          <button className="li" onClick={ () => {navigate('/cadastro')}}>Cadastro</button> 
+          <button className="li" onClick={ () => {navigate('/materias')}}>materias</button> 
+          <button className="li" onClick={ () => {navigate('/QuestaoPai')}}>questao_pai</button> 
+          <button className="li" onClick={ () => {navigate('/CriarQuestao')}}>Criar Questão</button>
+          <button className="li" onClick={ () => {navigate('/Questao')}}>Questão</button>
+          <button className="li" onClick={ () => {navigate('/estatisticas')}}>Estatísticas</button>
+          {/*<button className="li" onClick={ () => {navigate('telaQuizes')}}>Quizes</button>*/}
         </ul> 
       </nav>
-
       <div className="conteudo">
         <h1 id="title">Quer aprender de maneira interativa?</h1>
         <img className="logo2" src={logo2} alt='Eduquiz'/>  
-        
         <div className="sobre">
         <h1 id="pTitle">Sobre</h1>
         <br/>
@@ -61,5 +53,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

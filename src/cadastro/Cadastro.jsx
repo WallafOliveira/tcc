@@ -6,7 +6,7 @@ function Cadastro() {
     const navigate = useNavigate();
     return (
         <div class="container_cadastro_pais">
-            <img className="logo" src={logo} alt='Eduquiz'/>
+            <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
             <span>CADASTRAR-SE COMO RESPONSÁVEL</span>
             <div class="email_password">
                 <input class="input" type="text" placeholder="Nome" />

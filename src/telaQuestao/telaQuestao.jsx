@@ -1,93 +1,57 @@
-import React, {useState} from "react";
-import logo from './logo.png';
 import "./telaQuestao.css"; // Corrija o caminho para o arquivo CSS
-import { useNavigate } from "react-router-dom";
-
-
+import logo from './logo.png';
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
 function Questao() {
-
  const navigate = useNavigate();
-
  const [questoes, setQuestoes] = useState(
-	[
-    {
-      "texto_questao": "Quanto é 1+1 ?",
-      "img_questao": null
-    },
-  ]
-);
-
-const [alternativas, setAlternativas] = useState(
-  [
-      
+	  [
       {
-        "texto_alternativa": "2",
+        "texto_questao": "Quanto é 1+1 ?",
+        "img_questao": null
       },
-      {
-        "texto_alternativa": "3",
-      },
-      {
-        "texto_alternativa": "4",
-      },
-      {
-        "texto_alternativa": "1",
-      },
-      
-
-  ]
-)
-    return (
-
-
+    ]
+  );
+  const [alternativas, setAlternativas] = useState(
+    [
+        {
+          "texto_alternativa": "2",
+        },
+        {
+          "texto_alternativa": "3",
+        },
+        {
+          "texto_alternativa": "4",
+        },
+        {
+          "texto_alternativa": "1",
+        },
+    ]
+  )
+  return (
     <div>
- 
-
-  <div>
-    <nav className="cabeçalho">
-      <img className="logo" src={logo} alt='Eduquiz' onClick={() => { navigate('/') }}/>
-    </nav>
-  </div>
-
-    <div className="campo_text">
-      {
-      questoes.map(questao => (
-        <h3 className="text_questao">{questao.texto_questao}</h3>
-      ))
-      }
-
-    </div>
-
-  <div className="buttonDiv">
-
-
-    {alternativas.map(alternativa =>(
-
-
-
-      <button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>
-    ))
-    }
-
-
-{/*
-
-<button style={{backgroundColor:"#E75502"}} className="button" onClick={() => { navigate('materias') }}>Alternativa B</button>
-<button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => { navigate('cadastro') }}>Alternativa D</button>
-<button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => { navigate('materias') }}>Alternativa C</button>
-*/
+      <div>
+        <nav className="cabeçalho">
+          <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
+        </nav>
+      </div>
+      <div className="campo_text">
+        {questoes.map(questao => (
+          <h3 className="text_questao">{questao.texto_questao}</h3>
+        ))}
+      </div>
+      <div className="buttonDiv">
+        {alternativas.map(alternativa =>(
+          <button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>
+        ))}
+        {/*<button style={{backgroundColor:"#E75502"}} className="button" onClick={() => {navigate('materias')}}>Alternativa B</button>
+        <button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => {navigate('cadastro')}}>Alternativa C</button>
+        <button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => {navigate('materias')}}>Alternativa D</button>*/}
+      </div>
+      <div className="btn_continuar">
+        <button className="btn_cont" onClick={() => { navigate('/')}}>Continuar</button>
+      </div>
+    </div>      
+  )
 }
-
-
-
-  </div>
-
-<div className="btn_continuar">
-  <button className="btn_cont" onClick={() => { navigate('/') }} >Continuar</button>
-  </div>
-</div>
-           
-    )
-
-}
-
- export default Questao;
+export default Questao;
