@@ -1,10 +1,11 @@
 import React, { useState } from "react"; // Importa React e useState para gerenciar o estado
 import logo from './logo.png'; // Importa uma imagem de logotipo
 import "./telaQuizes.css"; // Importa um arquivo de estilo CSS
-import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate da biblioteca react-router-dom para a navegação na aplicação
+import { useNavigate, useLocation } from "react-router-dom"; // Importa o hook useNavigate da biblioteca react-router-dom para a navegação na aplicação
 
 function TelaQuizes() {
     const navigate = useNavigate(); 
+    const location = useLocation();
 
     return (
         <div>
@@ -18,7 +19,7 @@ function TelaQuizes() {
 
                 <div id="quizHeader">
                     <div id="titleDiv">
-                        <text> Matéria </text>
+                        <text> {location.state.materia} </text>
                     </div>
                     <div id="buttonDiv">
                         <button id="buttonFilter" onClick={() => { navigate('/')}}>Filter</button>
@@ -27,16 +28,16 @@ function TelaQuizes() {
 
                 <div id="divLista">
                     <ul id="listaQuizes">
-                        <li class="listaItem"> <a href="">Questões de regência verbal de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de crase de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de virgula de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de literatura de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de análise sintática de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de interpretação de texto de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de pontuação de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de acentuação de vestibulares</a> </li>
-                        <li class="listaItem"> <a href="">Questões de anatomia de mamiferos de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de regência verbal de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de crase de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de virgula de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de literatura de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de análise sintática de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de interpretação de texto de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de pontuação de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de acentuação de vestibulares</a> </li>
+                        <li className="listaItem"> <a href="">Questões de anatomia de mamiferos de vestibulares</a> </li>
                     </ul>
                 </div>
 
