@@ -11,9 +11,7 @@ import Materia from './select_materia/materias.jsx';
 import CriarQuestao from './criarQuestao/criarQuestao.jsx';
 import TelaEstatisticas from './estatisticas/telaEstatisticas';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <React.StrictMode>
     <BrowserRouter>
