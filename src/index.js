@@ -25,7 +25,7 @@ root.render(
              <Route path="materias" element={ <Materia/> } />
              <Route path='QuestaoPai' element={<QuestaoPai/>}/>
              <Route path='Questao' element={<Questao/>}/>
-             <Route path='criarQuestao' element={<CriarQuestao/>} />
+             <Route path='CriarQuestao' element={<CriarQuestao/>} />
              <Route path='telaQuizes' element={<TelaQuizes/>} />
        </Route>
       </Routes>
