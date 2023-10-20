@@ -1,4 +1,4 @@
-import "./materias.css"; /*Corrija o caminho para o arquivo CSS*/
+import "./materias.css";
 import React from "react";
 import logo from './logo.png';
 import logo2 from './logo2.png';

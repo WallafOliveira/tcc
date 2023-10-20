@@ -10,6 +10,7 @@ import QuestaoPai from './questao_pai/questao_pai';
 import Materia from './select_materia/materias.jsx';
 import CriarQuestao from './criarQuestao/criarQuestao.jsx';
 import TelaEstatisticas from './estatisticas/telaEstatisticas';
+import RealTimeFormValidation from './validation'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
              <Route path='QuestaoPai' element={<QuestaoPai/>} />
              <Route path='criarQuestao' element={<CriarQuestao/>} />
              <Route path='estatisticas' element={<TelaEstatisticas/>} />
+             <Route path='validacao' element={<RealTimeFormValidation/>} />
        </Route>
       </Routes>
     </BrowserRouter>
