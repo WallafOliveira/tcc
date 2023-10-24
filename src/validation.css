@@ -1,46 +1,66 @@
 /* Apply styles to the entire form */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  /* Style input fields */
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Style error messages in red */
-  .error {
-    color: red;
-  }
-  
-  /* Apply animations to individual password requirements */
-  ul.password-requirements {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  /* Style individual password requirements list items */
-  li.password-requirement {
-    transition: color 0.3s;
-  }
-  
-  /* Style invalid password requirements in red */
-  li.password-requirement.invalid {
-    color: red;
-  }
-  
-  /* Style valid password requirements in green */
-  li.password-requirement.valid {
-    color: green;
-  }
-  
-  /* Hide the "Password is necessary" error message when there are password requirements */
-  div.error.invalid {
-    display: none;
-  }
-  
+#test {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style input fields */
+.entrada {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style error messages in red */
+.error {
+  color: red;
+}
+
+/* Apply animations to individual email requirements */
+ul.email-requirements {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Style individual email requirements list items */
+li.email-requirement {
+  transition: color 0.3s;
+}
+
+/* Style invalid email requirements in red */
+li.email-requirement.invalid {
+  color: red;
+}
+
+/* Style valid email requirements in green */
+li.email-requirement.valid {
+  color: green;
+}
+
+ /* Apply animations to individual password requirements */
+ ul.password-requirements {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Style individual password requirements list items */
+li.password-requirement {
+  transition: color 0.3s;
+}
+
+/* Style invalid password requirements in red */
+li.password-requirement.invalid {
+  color: red;
+}
+
+/* Style valid password requirements in green */
+li.password-requirement.valid {
+  color: green;
+}
+
+/* Hide the "Password is necessary" error message when there are password requirements */
+div.error.invalid {
+  display: none;
+}
