@@ -12,8 +12,6 @@ class RealTimeFormValidation extends Component {
       },
       emailRequirements: {
         hasAtSymbol: false,
-        hasLettersAfterAt: false,
-        hasLettersBeforeAt: false,
         validFormat: false
       },
       passwordRequirements: {
@@ -21,7 +19,6 @@ class RealTimeFormValidation extends Component {
         number: false,
         specialCharacter: false,
         uppercaseLetter: false,
-        lowercaseLetter: false
       },
     };
   }
@@ -33,26 +30,18 @@ class RealTimeFormValidation extends Component {
     };
     // Email validation
     const hasAtSymbol = email.includes('@');
-    const hasLettersAfterAt = /^[^@]+@[^@]+$/.test(email);
-    const hasLettersBeforeAt = /^[^@]+@[^@]+$/.test(email);
     const validFormat = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email);
     if (!email) {
       errors.email = 'Email is required';
     } else {
       if (!hasAtSymbol) {
         errors.email = 'Email must contain "@"';
-      } else if (!hasLettersAfterAt) {
-        errors.email = 'Email must have letters after "@"';
-      } else if (!hasLettersBeforeAt) {
-        errors.email = 'Email must have letters before "@"';
       } else if (!validFormat) {
         errors.email = 'Invalid Email';
       }
     }
     const emailRequirements = {
       hasAtSymbol,
-      hasLettersAfterAt,
-      hasLettersBeforeAt,
       validFormat
     };
         // Password validation
@@ -61,7 +50,6 @@ class RealTimeFormValidation extends Component {
           number: /\d/.test(password),
           specialCharacter: /[!@#$%^&*]/.test(password),
           uppercaseLetter: /[A-Z]/.test(password),
-          lowercaseLetter: /[a-z]/.test(password)
         };
         if (password) {
           errors.password = '';
@@ -86,9 +74,9 @@ class RealTimeFormValidation extends Component {
   render() {
     const {email, password, errors, emailRequirements, passwordRequirements} = this.state;
     return (
-      <div>
+      <div id="test">
         <h2>Real-Time Form Validation</h2>
-        <form id="test" onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <div>
             <label>Email:</label>
             <input
@@ -102,12 +90,6 @@ class RealTimeFormValidation extends Component {
             <ul className="email-requirements">
               <li className={`email-requirement ${emailRequirements.hasAtSymbol ? 'valid' : 'invalid'}`}>
                 Email must contain "@"
-              </li>
-              <li className={`email-requirement ${emailRequirements.hasLettersAfterAt ? 'valid' : 'invalid'}`}>
-                Email must have letters after "@"
-              </li>
-              <li className={`email-requirement ${emailRequirements.hasLettersBeforeAt ? 'valid' : 'invalid'}`}>
-                Email must have letters before "@"
               </li>
               <li className={`email-requirement ${emailRequirements.validFormat ? 'valid' : 'invalid'}`}>
                 Email is valid
@@ -135,9 +117,6 @@ class RealTimeFormValidation extends Component {
               </li>
               <li className={`password-requirement ${passwordRequirements.uppercaseLetter ? 'valid' : 'invalid'}`}>
                 Must contain at least one uppercase letter
-              </li>
-              <li className={`password-requirement ${passwordRequirements.lowercaseLetter ? 'valid' : 'invalid'}`}>
-                Must contain at least one lowercase letter
               </li>
             </ul>
           </div>
