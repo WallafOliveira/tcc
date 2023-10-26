@@ -5,6 +5,7 @@
 }
 .logo{
     width: 30%;
+    cursor: pointer;
 }
 .container_login{
     display:flex;

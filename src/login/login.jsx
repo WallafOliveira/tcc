@@ -6,7 +6,7 @@ function Login() {
     const navigate = useNavigate();
     return (
         <div className="container_login"> 
-            <img classNameName="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
+            <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
             <span className="title">Bem vindo de volta!</span>
             <div className="email_password">
                 <input className="input" type="email" placeholder="email@gmail.com" />
@@ -20,7 +20,7 @@ function Login() {
                 <a href="/">Esqueseu sua senha?</a>
             </div>
             <div className="btn_cad_log">
-                <button className="btn" onClick={ () => {navigate('/')}} >Login</button>
+                <button className="btn" onClick={ () => {navigate('/homeusuario')}} >Login</button>
                 <button className="btn" onClick={ () => {navigate('/cadastro')}} >Cadastro</button>
             </div>
             <div className="rede_login">
