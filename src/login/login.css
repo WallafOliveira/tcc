@@ -78,3 +78,31 @@
     width: 3%;
     height: 3%;
 }
+
+/* Apply styles to the entire form */
+#test {
+    margin: auto;
+    max-width: 25%;
+  }
+  /* Style input fields */
+  .entrada {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+  }
+  /* Style error messages in red */
+  .error {
+    color: rgb(255, 0, 0);
+  }
+  /* Style individual email or password requirements list items */
+  li.email-requirement, li.password-requirement {
+    transition: color 0.2s;
+  }
+  /* Style invalid email or password requirements in red */
+  li.email-requirement.invalid, li.password-requirement.invalid {
+    color: rgb(255, 0, 0);
+  }
+  /* Style valid email or password requirements in green */
+  li.email-requirement.valid, li.password-requirement.valid {
+    color: rgb(0, 255, 0);
+  }
