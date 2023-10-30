@@ -7,16 +7,15 @@ function Cadastro() {
     return (
         <div class="container_cadastro_pais">
             <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
-            <span>CADASTRAR-SE COMO RESPONSÁVEL</span>
+            <span>Faça seu Cadastro</span>
             <div class="email_password">
                 <input class="input" type="text" placeholder="Nome" />
                 <input class="input" type="number" placeholder="Idade" />
-                <input class="input" type="text" placeholder="Nome da Criança" />
                 <input class="input" type="email" placeholder="Email" />
-                <input class="input" type="password" placeholder="Senha!" />
+                <input class="input" type="password" placeholder="Senha" />
             </div>
             <div class="btn_cad">
-                <button class="btn" onClick={() => {navigate('/homenovo')}}>Cadastrar</button>
+                <button class="btn" onClick={() => {navigate('/homeusuario')}}>Cadastrar</button>
             </div>
             <div class="rede_login">
                 <img class='logo_social' src="https://img.freepik.com/icones-gratis/google_318-278809.jpg" alt="Google" onchange="$"/>

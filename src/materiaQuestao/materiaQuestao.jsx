@@ -1,8 +1,8 @@
 import React from "react";
-import "./questao_pai.css"; // Corrija o caminho para o arquivo CSS
+import "./materiaQuestao.css"; // Corrija o caminho para o arquivo CSS
 import logo from './logo.png';
 import {useNavigate} from "react-router-dom";
-function QuestaoPai() {
+function MateriaQuestao() {
  const navigate = useNavigate();
   return (
     <div>
@@ -12,8 +12,8 @@ function QuestaoPai() {
         </nav>
       </div>
       <div className="materia">
-        <h3 className="text_mat">Crie uma questão para seu filho!!</h3>
-        <h3 className="text_mat">Escolha a matéria para começar a criar</h3>
+        <h3 className="text_mat">Crie uma questão</h3>
+        <h3 className="text_mat">Qual Matéria se encaixa melhor com sua questão?</h3>
       </div>
       <div id="buttonDiv" class="button-container">
         <button style={{backgroundColor:"#00CC00"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>CIÊNCIAS</button>
@@ -26,4 +26,4 @@ function QuestaoPai() {
     </div>
   );
 }
-export default QuestaoPai;
+export default MateriaQuestao;
