@@ -1,9 +1,12 @@
 import "./login.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./logo.png";
 import { useNavigate } from "react-router-dom";
+
+
 function Login() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
+  const [monitAt, setMonitAt] = useState(0);
 
   const [valida, setValida] = useState({
     email: "",
@@ -60,14 +63,22 @@ function Login() {
     } else {
       errors.password = "Password is necessary";
     }
-    setValida({ errors, emailRequirements, passwordRequirements });
+    const novoEstado = { ...valida, errors, emailRequirements, passwordRequirements};
+    setValida(novoEstado);
   }
 
   function handleInputChange (e) {
-    const { name, value } = e.target; 
-    // setValida({ [name]: value }, validateForm()); ---- parei aqui
-  };
+    const { name, value } = e.target;  
+    //console.log('name: ' + name + "----- value: " + value);
+    //setValida({ [name]: value }, validateForm()); // ---- parei aqui
+    //setValida({ [name]: value });
+    const novoEstado = { ...valida, [name]: value};
 
+// Atualize o estado com a nova cópia do objeto
+    setValida(novoEstado); 
+    setMonitAt(monitAt + 1);
+  };
+  console.log(valida);
 //   handleSubmit = (e) => {
 //     e.preventDefault();
 //     this.validateForm();
@@ -82,6 +93,10 @@ function Login() {
 //       );
 //     }
 //   };
+
+  useEffect(() => {
+    validateForm();
+  }, [monitAt]);
 
   return (
     <div className="container_login">
@@ -116,8 +131,16 @@ function Login() {
               </li>
             </ul>
           </div>
-        <input className="input" type="password" placeholder="123ABC!" />
+        <input 
+          className={`entrada ${valida.errors.password ? 'invalid' : ''}`} 
+          type="password" 
+          placeholder="123ABC!" 
+          name="password" 
+          value={valida.password}
+          onChange={e => handleInputChange(e)}          
+        />
       </div>
+      {/* FALTA VALIDAR SENHA */}
       <div className="check_btn">
         <label className="checkbox-label">
           <input type="checkbox" />
