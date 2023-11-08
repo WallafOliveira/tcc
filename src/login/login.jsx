@@ -3,9 +3,8 @@ import React, { useState, useEffect } from "react";
 import logo from "./logo.png";
 import { useNavigate } from "react-router-dom";
 
-
 function Login() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [monitAt, setMonitAt] = useState(0);
 
   const [valida, setValida] = useState({
@@ -35,9 +34,7 @@ function Login() {
     };
     // Email validation
     const hasAtSymbol = email.includes("@");
-    const validFormat = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(
-      email
-    );
+    const validFormat = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email);
     if (!email) {
       errors.email = "Email is required";
     } else {
@@ -63,36 +60,38 @@ function Login() {
     } else {
       errors.password = "Password is necessary";
     }
-    const novoEstado = { ...valida, errors, emailRequirements, passwordRequirements};
+    const novoEstado = {
+      ...valida,
+      errors,
+      emailRequirements,
+      passwordRequirements,
+    };
     setValida(novoEstado);
   }
 
-  function handleInputChange (e) {
-    const { name, value } = e.target;  
-    //console.log('name: ' + name + "----- value: " + value);
-    //setValida({ [name]: value }, validateForm()); // ---- parei aqui
-    //setValida({ [name]: value });
-    const novoEstado = { ...valida, [name]: value};
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    const novoEstado = { ...valida, [name]: value };
 
-// Atualize o estado com a nova cópia do objeto
-    setValida(novoEstado); 
+    // Atualize o estado com a nova cópia do objeto
+    setValida(novoEstado);
     setMonitAt(monitAt + 1);
-  };
-  console.log(valida);
-//   handleSubmit = (e) => {
-//     e.preventDefault();
-//     this.validateForm();
-//     const { email, password, errors } = this.state;
+  }
 
-//     if (!errors.email && !errors.password) {
-//       console.log(
-//         "Form submitted with email: ",
-//         email,
-//         " and password: ",
-//         password
-//       );
-//     }
-//   };
+  //   handleSubmit = (e) => {
+  //     e.preventDefault();
+  //     this.validateForm();
+  //     const { email, password, errors } = this.state;
+
+  //     if (!valida.errors.email && !valida.errors.password) {
+  //       console.log(
+  //         "Form submitted with email: ",
+  //         email,
+  //         " and password: ",
+  //         password
+  //       );
+  //     }
+  //   };
 
   useEffect(() => {
     validateForm();
@@ -112,33 +111,87 @@ function Login() {
       <div className="email_password">
         {/* <input className="input" type="email" placeholder="email@gmail.com" /> */}
         <div>
-            <label>Email:</label>
-            <input
-              className={`entrada ${valida.errors.email ? 'invalid' : valida.emailRequirements.validFormat ? 'valid' : ''}`}
-              type="email"
-              placeholder="email@gmail.com"
-              name="email"
-              value={valida.email}
-              onChange={e => handleInputChange(e)}
-            />
-            <div className={`error ${valida.errors.email ? 'invalid' : ''}`}/>
-            <ul className="email-requirements">
-              <li className={`email-requirement ${valida.emailRequirements.hasAtSymbol ? 'valid' : 'invalid'}`}>
-                Email must contain "@"
-              </li>
-              <li className={`email-requirement ${valida.emailRequirements.validFormat ? 'valid' : 'invalid'}`}>
-                Email is valid
-              </li>
-            </ul>
-          </div>
-        <input 
-          className={`entrada ${valida.errors.password ? 'invalid' : ''}`} 
-          type="password" 
-          placeholder="123ABC!" 
-          name="password" 
-          value={valida.password}
-          onChange={e => handleInputChange(e)}          
-        />
+          <label>Email:</label>
+          <input
+            className={`entrada ${
+              valida.errors.email
+                ? "invalid"
+                : valida.emailRequirements.validFormat
+                ? "valid"
+                : ""
+            }`}
+            type="email"
+            placeholder="email@gmail.com"
+            name="email"
+            value={valida.email}
+            onChange={e => handleInputChange(e)}
+          />
+          <div className={`error ${valida.errors.email ? "invalid" : ""}`} />
+          <ul className="email-requirements">
+            <li
+              className={`email-requirement ${
+                valida.emailRequirements.hasAtSymbol ? "valid" : "invalid"
+              }`}
+            >
+              Email must contain "@"
+            </li>
+            <li
+              className={`email-requirement ${
+                valida.emailRequirements.validFormat ? "valid" : "invalid"
+              }`}
+            >
+              Email is valid
+            </li>
+          </ul>
+        </div>
+        <div>
+          <label>Senha:</label>
+          <input
+            className={`entrada ${valida.errors.password ? "invalid" : ""}`}
+            type="password"
+            placeholder="123ABC!"
+            name="password"
+            value={valida.password}
+            onChange={e => handleInputChange(e)}
+          />
+          <div
+            className={`error ${valida.errors.password ? "invalid" : ""}`}
+          ></div>
+          <ul className="password-requirements">
+            <li
+              className={`password-requirement ${
+                valida.passwordRequirements.length ? "valid" : "invalid"
+              }`}
+            >
+              Must be at least 8 characters long
+            </li>
+            <li
+              className={`password-requirement ${
+                valida.passwordRequirements.number ? "valid" : "invalid"
+              }`}
+            >
+              Must contain at least one number
+            </li>
+            <li
+              className={`password-requirement ${
+                valida.passwordRequirements.specialCharacter
+                  ? "valid"
+                  : "invalid"
+              }`}
+            >
+              Must contain at least one special character
+            </li>
+            <li
+              className={`password-requirement ${
+                valida.passwordRequirements.uppercaseLetter
+                  ? "valid"
+                  : "invalid"
+              }`}
+            >
+              Must contain at least one uppercase letter
+            </li>
+          </ul>
+        </div>
       </div>
       {/* FALTA VALIDAR SENHA */}
       <div className="check_btn">
