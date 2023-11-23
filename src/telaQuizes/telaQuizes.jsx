@@ -24,10 +24,10 @@ function TelaQuizes() {
                 <div id="divLista">
                     <ul id="listaQuizes">
                         {/* Colocar o quiz de cada matéria do banco de dados */}
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de regência verbal de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de crase de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de virgula de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de literatura de vestibulares</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Adiçãos</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Subtração</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Multiplicação</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Divisão</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de análise sintática de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de interpretação de texto de vestibulares</li>

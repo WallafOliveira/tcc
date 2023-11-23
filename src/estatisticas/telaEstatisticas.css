@@ -1,8 +1,16 @@
 #carrossel{
     padding-block: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+img{
+    width: 45%;
 }
 #evolucaoDiv{
-    gap:10px;
+    gap:20px;
     width: 100%;
     height: 250px;
     display: flex;

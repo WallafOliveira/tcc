@@ -43,7 +43,7 @@ function Questao() {
       </div>
 
       <div className="buttonDiv">
-        {alternativas.map(alternativa =>(<button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>))}
+        {alternativas.map(alternativa =>(<button style={{backgroundColor:"#eaeaea", color:'black', }} className="button">{alternativa.texto_alternativa}</button>))}
       </div>
       
       {/* Quiz precisa ter várias questões dentro dele, e o botão tem que passar para a próxima questão do quiz */ }
