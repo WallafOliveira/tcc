@@ -11,7 +11,7 @@ function HomeUsuario() {
       <nav className="botão">
         <img className="logo" src={logo} alt='Eduquiz'/> 
         <ul>
-          <button className="li" onClick={ () => {navigate('/materias')}}>materias</button>
+          <button className="li" onClick={ () => {navigate('/materias')}}>Matérias</button>
           <button className="li" onClick={ () => {navigate('/estatisticas')}}>Estatísticas</button>
           <button className="li" onClick={ () => {navigate('/materiaquestao')}}>Criar Questão</button>
         </ul> 

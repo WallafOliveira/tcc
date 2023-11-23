@@ -23,6 +23,7 @@ function TelaQuizes() {
                 </div>
                 <div id="divLista">
                     <ul id="listaQuizes">
+                        {/* Colocar o quiz de cada matéria do banco de dados */}
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de regência verbal de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de crase de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de virgula de vestibulares</li>

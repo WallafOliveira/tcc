@@ -110,7 +110,7 @@ function Login() {
       <span className="title">Bem vindo de volta!</span>
       <div className="email_password">
         {/* <input className="input" type="email" placeholder="email@gmail.com" /> */}
-        <div>
+        <div className="divEmail">
           <label>Email:</label>
           <input
             className={`entrada ${

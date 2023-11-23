@@ -11,7 +11,7 @@ function Materia() {
         <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
       </nav>
       <div className="materia">
-        <h1 className="text_mat">Qual Matéria você quer aprender?</h1>
+        <h1 className="texto_materia">Qual Matéria você quer aprender?</h1>
         <div>
           <button  className="btnMat" onClick={() => {navigate('/telaQuizes', {state: {materia: "Matemática"}})}}>Matemática</button>
           <button className="btnPor"  onClick={ () => {navigate('/telaQuizes', {state: {materia: "Português"}})}}>Português</button>
@@ -26,9 +26,9 @@ function Materia() {
           <button className="btnIn" onClick={() => {navigate('/telaQuizes', {state: {materia: "Inglês"}})}}>Inglês</button>
         </div>
       </div>
-      <div className="no">
+      {/*<div className="no">
         <button className="btnNo"onClick={()=>{navigate('/telaQuizes',{state:{materia:""}})}}/>
-      </div>
+      </div>*/}
     </div>
   );
 }

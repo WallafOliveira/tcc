@@ -17,7 +17,7 @@ function CadPais() {
                     <input class="input"  type="password" placeholder="Senha!" />
                 </div>
                 <div class="btn_cad">
-                    <button class="btn" onClick={() => {navigate('/homepais')}}>Cadastro</button>
+                    <button class="btn" onClick={() => {navigate('/homeusuario')}}>Cadastro</button>
                 </div>
                 <div class="rede_login">
                     <img class='logo_social' src="https://img.freepik.com/icones-gratis/google_318-278809.jpg" alt="Google" onchange="$"/>

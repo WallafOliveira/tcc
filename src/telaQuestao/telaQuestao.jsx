@@ -35,21 +35,21 @@ function Questao() {
           <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
         </nav>
       </div>
+      
       <div className="campo_text">
         {questoes.map(questao => (
           <h3 className="text_questao">{questao.texto_questao}</h3>
         ))}
       </div>
+
       <div className="buttonDiv">
-        {alternativas.map(alternativa =>(
-          <button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>
-        ))}
-        {/*<button style={{backgroundColor:"#E75502"}} className="button" onClick={() => {navigate('materias')}}>Alternativa B</button>
-        <button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => {navigate('cadastro')}}>Alternativa C</button>
-        <button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => {navigate('materias')}}>Alternativa D</button>*/}
+        {alternativas.map(alternativa =>(<button style={{backgroundColor:"#00CC00"}} className="button">{alternativa.texto_alternativa}</button>))}
       </div>
+      
+      {/* Quiz precisa ter várias questões dentro dele, e o botão tem que passar para a próxima questão do quiz */ }
+      
       <div className="btn_continuar">
-        <button className="btn_cont" onClick={() => { navigate('/')}}>Continuar</button>
+        <button className="btn_cont" onClick={ () => {window.location.reload()}}>Continuar</button>
       </div>
     </div>      
   )

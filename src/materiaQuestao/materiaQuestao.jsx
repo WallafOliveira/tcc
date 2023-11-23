@@ -15,13 +15,17 @@ function MateriaQuestao() {
         <h3 className="text_mat">Crie uma questão</h3>
         <h3 className="text_mat">Qual Matéria se encaixa melhor com sua questão?</h3>
       </div>
-      <div id="buttonDiv" class="button-container">
-        <button style={{backgroundColor:"#00CC00"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>CIÊNCIAS</button>
-        <button style={{backgroundColor:"#E75502"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>GEOGRAFIA</button>
-        <button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>INGLÊS</button>
-        <button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>HISTÓRIA</button>
-        <button style={{backgroundColor:"#FF0000"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>MATEMÁTICA</button>
-        <button style={{backgroundColor:"#0088FF"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>PORTUGUÊS</button>
+      <div id="buttonDiv">
+        <div class="button-container">
+          <button style={{backgroundColor:"#00CC00"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>CIÊNCIAS</button>
+          <button style={{backgroundColor:"#E75502"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>GEOGRAFIA</button>
+          <button style={{backgroundColor:"#CC00FF"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>INGLÊS</button>
+        </div>
+        <div class="button-container">
+          <button style={{backgroundColor:"#EBBE00"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>HISTÓRIA</button>
+          <button style={{backgroundColor:"#FF0000"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>MATEMÁTICA</button>
+          <button style={{backgroundColor:"#0088FF"}} className="button" onClick={() => {navigate('/CriarQuestao')}}>PORTUGUÊS</button>
+        </div>
       </div>
     </div>
   );
