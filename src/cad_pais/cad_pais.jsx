@@ -2,12 +2,15 @@ import "./cad_pais.css"; // Corrija o caminho para o arquivo CSS
 import React from "react";
 import logo from './logo.png';
 import {useNavigate} from "react-router-dom";
+import backgroundImage from "./backgroundImage.jpg"
 function CadPais() {
     const navigate = useNavigate();
     return (
         <div>
+            <nav className="cabeçalho">
+                <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
+            </nav>
             <div class="container_cadastro_pais">
-                <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
                 <span>CADASTRA-SE COMO RESPONSÁVEL</span>
                 <div class="email_password">
                     <input class="input" type="text" placeholder="Nome" />

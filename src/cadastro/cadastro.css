@@ -6,26 +6,32 @@
 .logo{
     width: 30%;
 }
-.container_cadastro_pais{
+#cadastroTitle{
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container_cadastro{
     display:flex;
-    padding-top: 4vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: url(backgroundImage.jpg);
+    background-size:cover;
+    padding-top:50px;
+    padding-bottom:8.65%;
 }
 .email_password{
     display: flex;
-    padding-top: 2%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .input{
-    width:43vh;
-    height: 5vh;
+    width:100%;
+    height: 20px;
 }
 .btn_cad{
-    padding-top: 3%;
+    padding-top: 10px;
 }
 .btn{
     width: 12vh;

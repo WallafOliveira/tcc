@@ -1,6 +1,7 @@
 import "./login.css";
 import React, { useState, useEffect } from "react";
 import logo from "./logo.png";
+import backgroundImage from "./backgroundImage.jpg";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -98,15 +99,11 @@ function Login() {
   }, [monitAt]);
 
   return (
+    <div>
+      <nav className="cabeçalho">
+        <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
+      </nav>
     <div className="container_login">
-      <img
-        className="logo"
-        src={logo}
-        alt="Eduquiz"
-        onClick={() => {
-          navigate("/");
-        }}
-      />
       <span className="title">Bem vindo de volta!</span>
       <div className="email_password">
         {/* <input className="input" type="email" placeholder="email@gmail.com" /> */}
@@ -133,14 +130,14 @@ function Login() {
                 valida.emailRequirements.hasAtSymbol ? "valid" : "invalid"
               }`}
             >
-              Email must contain "@"
+              Email deve conter "@"
             </li>
             <li
               className={`email-requirement ${
                 valida.emailRequirements.validFormat ? "valid" : "invalid"
               }`}
             >
-              Email is valid
+              Formato de email inválido
             </li>
           </ul>
         </div>
@@ -163,14 +160,14 @@ function Login() {
                 valida.passwordRequirements.length ? "valid" : "invalid"
               }`}
             >
-              Must be at least 8 characters long
+              Mínimo 8 caracteres
             </li>
             <li
               className={`password-requirement ${
                 valida.passwordRequirements.number ? "valid" : "invalid"
               }`}
             >
-              Must contain at least one number
+              Precisa ter números
             </li>
             <li
               className={`password-requirement ${
@@ -179,7 +176,7 @@ function Login() {
                   : "invalid"
               }`}
             >
-              Must contain at least one special character
+              Precisa ter um caracter especial (ex: @#$%)
             </li>
             <li
               className={`password-requirement ${
@@ -188,7 +185,7 @@ function Login() {
                   : "invalid"
               }`}
             >
-              Must contain at least one uppercase letter
+              Precisa ter uma letra maiúscula
             </li>
           </ul>
         </div>
@@ -197,9 +194,9 @@ function Login() {
       <div className="check_btn">
         <label className="checkbox-label">
           <input type="checkbox" />
-          Lembrar Usuário
+          Manter conectado
         </label>
-        <a href="/">Esqueseu sua senha?</a>
+        <button id="esqSenha" onClick={()=>{window.location.reload()}}>Esqueceu a senha?</button>
       </div>
       <div className="btn_cad_log">
         <button
@@ -233,6 +230,7 @@ function Login() {
           onChange="$"
         />
       </div>
+    </div>
     </div>
   );
 }

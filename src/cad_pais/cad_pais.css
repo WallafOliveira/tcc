@@ -13,6 +13,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-image: url(backgroundImage.jpg);
+    background-size:cover;
+    padding-top:50px;
+    padding-bottom:7.5%;
 }
 .email_password{
     display: flex;

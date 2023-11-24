@@ -18,7 +18,7 @@ function TelaQuizes() {
                         <text> {location.state.materia} </text>
                     </div>
                     <div id="buttonDiv">
-                        <button id="buttonFilter" onClick={() => {navigate('/')}}>Filter</button>
+                        <button id="buttonFilter" onClick={() => {window.location.reload()}}>Filter</button>
                     </div>
                 </div>
                 <div id="divLista">

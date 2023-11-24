@@ -1,13 +1,17 @@
-import "./cadastro.css"; // Corrija o caminho para o arquivo CSS
+import "./cadastro.css";
 import React from "react";
 import logo from './logo.png';
 import {useNavigate} from "react-router-dom";
+import backgroundImage from "./backgroundImage.jpg"
 function Cadastro() {
     const navigate = useNavigate();
     return (
-        <div class="container_cadastro_pais">
-            <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/>
-            <span>Faça seu Cadastro</span>
+        <div>
+            <nav className="cabeçalho">
+                <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
+            </nav>
+        <div class="container_cadastro">
+            <span id="cadastroTitle">Faça seu Cadastro</span>
             <div class="email_password">
                 <input class="input" type="text" placeholder="Nome" />
                 <input class="input" type="number" placeholder="Idade" />
@@ -21,6 +25,7 @@ function Cadastro() {
                 <img class='logo_social' src="https://img.freepik.com/icones-gratis/google_318-278809.jpg" alt="Google" onchange="$"/>
                 <img class='logo_social' src="https://www.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="Facebook" onchange="$"/>
             </div>
+        </div>
         </div>
     );
 }
