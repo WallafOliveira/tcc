@@ -99,7 +99,7 @@ function Login() {
   }, [monitAt]);
 
   return (
-    <div>
+    <div id="root">
       <nav className="cabeçalho">
         <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
       </nav>
@@ -199,20 +199,10 @@ function Login() {
         <button id="esqSenha" onClick={()=>{window.location.reload()}}>Esqueceu a senha?</button>
       </div>
       <div className="btn_cad_log">
-        <button
-          className="btn"
-          onClick={() => {
-            navigate("/homeusuario");
-          }}
-        >
+        <button className="btn" onClick={() => {navigate("/homeusuario");}}>
           Login
         </button>
-        <button
-          className="btn"
-          onClick={() => {
-            navigate("/cadastro");
-          }}
-        >
+        <button className="btn"onClick={() => {navigate("/cadastro");}}>
           Cadastro
         </button>
       </div>

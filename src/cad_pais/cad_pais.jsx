@@ -6,18 +6,18 @@ import backgroundImage from "./backgroundImage.jpg"
 function CadPais() {
     const navigate = useNavigate();
     return (
-        <div>
+        <div id="paisMain">
             <nav className="cabeçalho">
                 <img className="logo" src={logo} alt='Eduquiz' onClick={() => {navigate('/')}}/> 
             </nav>
             <div class="container_cadastro_pais">
-                <span>CADASTRA-SE COMO RESPONSÁVEL</span>
+                <span>CADASTRE-SE COMO RESPONSÁVEL</span>
                 <div class="email_password">
                     <input class="input" type="text" placeholder="Nome" />
                     <input class="input" type="number" placeholder="Idade" />
                     <input class="input" type="text" placeholder="Nome da Criança" />
                     <input class="input" type="email" placeholder="Email" />
-                    <input class="input"  type="password" placeholder="Senha!" />
+                    <input class="input"  type="password" placeholder="Senha" />
                 </div>
                 <div class="btn_cad">
                     <button class="btn" onClick={() => {navigate('/homeusuario')}}>Cadastro</button>

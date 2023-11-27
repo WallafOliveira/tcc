@@ -3,20 +3,24 @@
     padding: 0%;
     box-sizing: border-box;
 }
+#paisMain{
+    height:100%;
+}
 .logo{
     width: 30%;
 }
 .container_cadastro_pais{
-    /* gap: 2%; */
     display:flex;
-    padding-top: 3vh;
+    padding-top: 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-image: url(backgroundImage.jpg);
+    height:100%;
     background-size:cover;
-    padding-top:50px;
-    padding-bottom:7.5%;
+}
+.container_cadastro_pais span{
+    font-size: 40px;
 }
 .email_password{
     display: flex;
@@ -25,16 +29,18 @@
     flex-direction: column;
     justify-content: center;
 }
-.input{
-    width:43vh;
-    height: 5vh;
+.email_password .input{
+    width: 300px;
+    height: 12%;
+    font-size: 30px;
 }
 .btn_cad{
     padding-top: 3%;
 }
 .btn{
-    width: 12vh;
-    height: 7vh;
+    width: 200px;
+    height: 10%;
+    font-size: 20px;
     color: #FFFFFF;
     background-color: #6466D1;
 }

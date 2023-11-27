@@ -33,9 +33,9 @@
 .btn_cad{
     padding-top: 10px;
 }
-.btn{
-    width: 12vh;
-    height: 7vh;
+.btn_cad .btn{
+    width: 180px;
+    height: 90%;
     color: #FFFFFF;
     background-color: #6466D1;
 }
