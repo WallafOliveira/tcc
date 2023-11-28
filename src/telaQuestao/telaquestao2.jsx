@@ -7,7 +7,7 @@ function Questao() {
  const [questoes, setQuestoes] = useState(
 	  [
       {
-        "texto_questao": "Quanto é 1+1 ?",
+        "texto_questao": "Quanto é 2+2 ?",
         "img_questao": null
       },
     ]
@@ -15,7 +15,7 @@ function Questao() {
   const [alternativas, setAlternativas] = useState(
     [
         {
-          "texto_alternativa": "2",
+          "texto_alternativa": "10",
         },
         {
           "texto_alternativa": "3",
@@ -24,7 +24,7 @@ function Questao() {
           "texto_alternativa": "4",
         },
         {
-          "texto_alternativa": "1",
+          "texto_alternativa": "6",
         },
     ]
   )
@@ -43,19 +43,13 @@ function Questao() {
       </div>
 
       <div className="buttonDiv">
-        {alternativas.map(alternativa =>(<button  style={{backgroundColor:"#eaeaea", color:'black', }} className="button" onClick={()=>{navigate('/telaquestao2')}}  > {alternativa.texto_alternativa} </button>))}
-
-        
+        {alternativas.map(alternativa =>(<button style={{backgroundColor:"#eaeaea", color:'black', }} className="button" onClick={()=>{navigate('/estatisticas')}}>{alternativa.texto_alternativa}</button>))}
       </div>
-       
+      
       {/* Quiz precisa ter várias questões dentro dele, e o botão tem que passar para a próxima questão do quiz */ }
       
       <div className="btn_continuar">
-        <button className="btn_cont" onClick={ () => {navigate('/telaquestao2')} }>Continuar</button>
-
-        {/* {window.location.reload()} */}
-
-        
+        <button className="btn_cont" onClick={ () => {window.location.reload()}}>Continuar</button>
       </div>
     </div>      
   )

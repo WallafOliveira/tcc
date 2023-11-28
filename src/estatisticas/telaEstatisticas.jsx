@@ -26,7 +26,7 @@ function TelaEstatisticas() {
           <div id="container">
             <div id="quizFeitos">
               <h1 id="tituloQuizFeitos"> Total de Quizes Feitos: </h1>
-              <p id="numeroQuizes">5</p>
+              <p id="numeroQuizes">1</p>
             </div>
             <div id="media">
               <div id="tituloDiv">
@@ -37,7 +37,7 @@ function TelaEstatisticas() {
                   <div className="progress-bar-fill">
                   </div>
                 </div>
-                <text className="texto-progress-bar">70%</text>
+                <text className="texto-progress-bar">100%</text>
               </div>
             </div>
           </div>

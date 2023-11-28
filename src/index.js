@@ -12,6 +12,7 @@ import HomeUsuario from './home-login/Home-login';
 import CriarQuestao from './criarQuestao/criarQuestao.jsx';
 import TelaEstatisticas from './estatisticas/telaEstatisticas';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Telaquestao2 from './telaQuestao/telaquestao2'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*silverladder.com*/
 root.render(
@@ -30,6 +31,7 @@ root.render(
             <Route path='materiaquestao' element={<MateriaQuestao/>} />
             <Route path='criarquestao' element={<CriarQuestao/>} />
             <Route path='estatisticas' element={<TelaEstatisticas/>} />
+            <Route path='telaquestao2' element={<Telaquestao2/>} />
        </Route>
       </Routes>
     </BrowserRouter>
