@@ -21,14 +21,16 @@
 	}
 ]
 return(
-	questoes.map((questao) => {
-	    return (
-	        <ul>
-	            <li>{questao.texto_questao}</li>
-	            <li>{questao.img_questao}</li>
-	        </ul>
-	    )
-	})
+	questoes.map(
+ 		(questao) => {
+			return (
+	        		<ul>
+	        			<li>{questao.texto_questao}</li>
+	        			<li>{questao.img_questao}</li>
+	        		</ul>
+			)
+		}
+ 	)
 )*/
 function Home() {
 	const [questoes, setQuestoes] = useState(
@@ -55,5 +57,5 @@ function Home() {
 			}			
 		]
 	);
-	/*return()*/
+/*return()*/
 }
