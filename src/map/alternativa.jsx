@@ -61,11 +61,13 @@
 	},
 ]
 return(
-	alternativas.map((alternativa) => {
-	    return (
-	        <ul>
-	            <li>{alternativa.texto_alternativa}</li>
-	        </ul>
-	    )
-	})
+	alternativas.map(
+ 		(alternativa) => {
+			return (
+				<ul>
+			        	<li>{alternativa.texto_alternativa}</li>
+				</ul>
+			)
+		}
+ 	)
 )*/
