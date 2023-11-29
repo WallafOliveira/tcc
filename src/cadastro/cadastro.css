@@ -12,19 +12,19 @@
 }
 .container_cadastro{
     display:flex;
+    padding-top:50px;
     align-items: center;
+    padding-bottom:8.65%;
+    background-size:cover;
     flex-direction: column;
     justify-content: center;
     background-image: url(backgroundImage.jpg);
-    background-size:cover;
-    padding-top:50px;
-    padding-bottom:8.65%;
 }
 .email_password{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 .input{
     width:100%;
@@ -34,8 +34,8 @@
     padding-top: 10px;
 }
 .btn_cad .btn{
-    width: 180px;
     height: 90%;
+    width: 180px;
     color: #FFFFFF;
     background-color: #6466D1;
 }
