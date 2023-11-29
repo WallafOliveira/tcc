@@ -36,9 +36,7 @@ function Questao() {
         </nav>
       </div>
       <div className="campo_text">{questoes.map(questao => (<h3 className="text_questao">{questao.texto_questao}</h3>))}</div>
-      <div className="buttonDiv">
-        {alternativas.map(alternativa =>(<button style={{backgroundColor:"#eaeaea", color:'black', }} className="button" onClick={()=>{navigate('/telaquestao2')}} > {alternativa.texto_alternativa} </button>))}
-      </div>
+      <div className="buttonDiv">{alternativas.map(alternativa =>(<button style={{backgroundColor:"#eaeaea", color:'black', }} className="button" onClick={()=>{navigate('/telaquestao2')}} > {alternativa.texto_alternativa} </button>))}</div>
       {/* Quiz precisa ter várias questões dentro dele, e o botão tem que passar para a próxima questão do quiz */ }
       <div className="btn_continuar">
         <button className="btn_cont" onClick={() => {navigate('/telaquestao2')}}>Continuar</button>
