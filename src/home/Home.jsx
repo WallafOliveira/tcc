@@ -30,9 +30,9 @@ function Home() {
           <h1 id="pTitle">Sobre</h1>
           <br/>
           <p className="text">
-          Recursos interativos: Tornamos a aprendizagem divertida e envolvente para as crianças. Com elementos visuais atraentes, 
-          animações e feedback imediato sobre as respostas, 
-          incentivamos o interesse e a motivação dos alunos durante o processo de aprendizagem.
+            Recursos interativos: Tornamos a aprendizagem divertida e envolvente para as crianças. Com elementos visuais atraentes, 
+            animações e feedback imediato sobre as respostas, 
+            incentivamos o interesse e a motivação dos alunos durante o processo de aprendizagem.
           </p>
           <br/>
           <p className="text">
