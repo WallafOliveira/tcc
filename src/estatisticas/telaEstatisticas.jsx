@@ -1,9 +1,9 @@
 import logo from './logo.png';
 import "./telaEstatisticas.css";
 import Carousel from "./carousel";
+import imagem1 from "./kidsEsta.jpg";
 import React, { useState } from "react";
 import {useNavigate, useLocation} from "react-router-dom";
-import imagem1 from "./kidsEsta.jpg";
 function TelaEstatisticas() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -18,8 +18,7 @@ function TelaEstatisticas() {
         <div id="carrossel">
           {/* <Carousel />  */}
           <h1 id="textoEvolucao"> Estatística </h1>
-          <img className="estatistica" src={imagem1} alt='Estatistica'/> 
-
+          <img className="estatistica" src={imagem1} alt='Estatistica'/>
         </div>
         <div id="evolucaoDiv">
           <h1 id="textoEvolucao"> Evolução </h1>
