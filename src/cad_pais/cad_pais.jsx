@@ -17,7 +17,7 @@ function CadPais() {
                     <input class="input" type="number" placeholder="Idade" />
                     <input class="input" type="text" placeholder="Nome da Criança" />
                     <input class="input" type="email" placeholder="Email" />
-                    <input class="input"  type="password" placeholder="Senha" />
+                    <input class="input" type="password" placeholder="Senha" />
                 </div>
                 <div class="btn_cad">
                     <button class="btn" onClick={() => {navigate('/homeusuario')}}>Cadastro</button>
