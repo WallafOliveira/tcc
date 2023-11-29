@@ -25,20 +25,18 @@ function TelaQuizes() {
                     <ul id="listaQuizes">
                         {/* Colocar o quiz de cada matéria do banco de dados */}
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Adiçãos</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Divisão</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Subtração</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Multiplicação</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de Divisão</li>
-                        {/* <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de análise sintática de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de interpretação de texto de vestibulares</li>
+                        {/* <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de pontuação de vestibulares</li>
                         <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de acentuação de vestibulares</li>
-                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de anatomia de mamiferos de vestibulares</li> */}
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de análise sintática de vestibulares</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de anatomia de mamiferos de vestibulares</li>
+                        <li className="listaItem" onClick={() => {navigate('/questao')}}>Questões de interpretação de texto de vestibulares</li> */}
                     </ul>
                 </div>
-
             </div>
-
         </div>
     );
 }
