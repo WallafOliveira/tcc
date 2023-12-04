@@ -26,9 +26,6 @@ function Materia() {
           <button className="btnIn" onClick={() => {navigate('/telaQuizes', {state: {materia: "Inglês"}})}}>Inglês</button>
         </div>
       </div>
-      {/*<div className="no">
-        <button className="btnNo"onClick={()=>{navigate('/telaQuizes',{state:{materia:""}})}}/>
-      </div>*/}
     </div>
   );
 }

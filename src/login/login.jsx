@@ -68,7 +68,6 @@ function Login() {
       <div className="container_login">
         <span className="title">Bem vindo de volta!</span>
         <div className="email_password">
-          {/* <input className="input" type="email" placeholder="email@gmail.com" /> */}
           <div className="divEmail">
             <label>Email:</label>
             <input className={
@@ -86,7 +85,7 @@ function Login() {
               } > Formato de email inválido </li>
             </ul>
           </div>
-          <div>
+          <div id="passwordDiv">
             <label>Senha:</label>
             <input className={
               `entrada ${ valida.errors.password ? "invalid" : "" }`
