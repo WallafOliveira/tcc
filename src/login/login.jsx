@@ -2,7 +2,7 @@ import "./login.css";
 import logo from "./logo.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import backgroundImage from "./backgroundImage.jpg";
+//import backgroundImage from "./backgroundImage.jpg";
 function Login() {
   const navigate = useNavigate();
   const [monitAt, setMonitAt] = useState(0);
@@ -59,7 +59,7 @@ function Login() {
   //      console.log("Form submitted with email: ", email, " and password: ", password);
   //    }
   //  };
-  useEffect(() => {validateForm();}, [monitAt]);
+  useEffect(() => {validateForm();}, /*[monitAt]*/);
   return (
     <div id="root">
       <nav className="cabeçalho">

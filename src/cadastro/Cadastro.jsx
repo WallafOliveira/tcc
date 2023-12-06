@@ -2,7 +2,7 @@ import "./cadastro.css";
 import React from "react";
 import logo from './logo.png';
 import {useNavigate} from "react-router-dom";
-import backgroundImage from "./backgroundImage.jpg"
+//import backgroundImage from "./backgroundImage.jpg"
 function Cadastro() {
     const navigate = useNavigate();
     return (

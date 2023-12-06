@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 function Questao() {
  const navigate = useNavigate();
- const [questoes, setQuestoes] = useState(
+ const [questoes, /*setQuestoes*/] = useState(
 	[
 		{
         		"texto_questao": "Quanto é 1+1 ?",
@@ -12,7 +12,7 @@ function Questao() {
       		},
     	]
   );
-  const [alternativas, setAlternativas] = useState(
+  const [alternativas, /*setAlternativas*/] = useState(
     [
         {
           "texto_alternativa": "2",

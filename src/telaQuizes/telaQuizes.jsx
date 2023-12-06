@@ -1,6 +1,6 @@
 import "./telaQuizes.css"; // Importa um arquivo de estilo CSS
 import logo from './logo.png'; // Importa uma imagem de logotipo
-import React, {useState} from "react"; // Importa React e useState para gerenciar o estado
+import React, {/*useState*/} from "react"; // Importa React e useState para gerenciar o estado
 import {useNavigate, useLocation} from "react-router-dom"; // Importa o hook useNavigate da biblioteca react-router-dom para a navegação na aplicação
 function TelaQuizes() {
     const navigate = useNavigate(); 

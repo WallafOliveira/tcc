@@ -14,7 +14,7 @@ function Materia() {
         <h1 className="texto_materia">Qual Matéria você quer aprender?</h1>
         <div>
           <button  className="btnMat" onClick={() => {navigate('/telaQuizes', {state: {materia: "Matemática"}})}}>Matemática</button>
-          <button className="btnPor"  onClick={ () => {navigate('/telaQuizes', {state: {materia: "Português"}})}}>Português</button>
+          <button className="btnPor"  onClick={() => {navigate('/telaQuizes', {state: {materia: "Português"}})}}>Português</button>
         </div>
         <div className="meio"> 
           <button className="btnHis" onClick={() => {navigate('/telaQuizes' , {state: {materia: "História"}})}}>História</button> 

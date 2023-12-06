@@ -36,7 +36,7 @@
     padding:10px;
     font-size:15px;
 }
- .check_btn{
+.check_btn{
     gap: 10vh;
     display: flex;
     align-items: center;
@@ -83,49 +83,47 @@
     width: 3%;
     height: 3%;
 }
-
 /* Apply styles to the entire form */
 #test {
-    margin: auto;
-    max-width: 25%;
-  }
-  /* Style input fields */
-  .entrada {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000000;
-  }
-  /* Style error messages in red */
-  .error {
-    color: rgb(255, 255, 255);
-  }
-  /* Style individual email or password requirements list items */
-  li.email-requirement, li.password-requirement {
-    transition: color 0.2s;
-  }
-  /* Style invalid email or password requirements in red */
-  li.email-requirement.invalid, li.password-requirement.invalid {
-    color: rgb(255, 255, 255);
-  }
-  /* Style valid email or password requirements in green */
-  li.email-requirement.valid, li.password-requirement.valid {
-    color: rgb(0, 255, 0);
-  }
-
-  .divEmail{
-    width:100%;
-    margin-bottom: 20px;
-  }
- .email_password li, input{
-  font-size: 20px;
- }
- .email_password label{
+  margin: auto;
+  max-width: 25%;
+}
+/* Style input fields */
+.entrada {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000000;
+}
+/* Style error messages in red */
+.error {
+  color: rgb(255, 255, 255);
+}
+/* Style individual email or password requirements list items */
+li.email-requirement, li.password-requirement {
+  transition: color 0.2s;
+}
+/* Style invalid email or password requirements in red */
+li.email-requirement.invalid, li.password-requirement.invalid {
+  color: rgb(255, 255, 255);
+}
+/* Style valid email or password requirements in green */
+li.email-requirement.valid, li.password-requirement.valid {
+  color: rgb(0, 255, 0);
+}
+.divEmail{
+  width:100%;
+  margin-bottom: 20px;
+}
+.email_password li, input{
+ font-size: 20px;
+}
+.email_password label{
+ font-size: 25px;
+}
+#esqSenha{
+  border:none;
+  color: #126bda;
   font-size: 25px;
- }
-  #esqSenha{
-    border:none;
-    color: #126bda;
-    font-size: 25px;
-    background-color: transparent;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

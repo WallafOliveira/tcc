@@ -2,7 +2,7 @@ import "./cad_pais.css"; // Corrija o caminho para o arquivo CSS
 import React from "react";
 import logo from './logo.png';
 import {useNavigate} from "react-router-dom";
-import backgroundImage from "./backgroundImage.jpg"
+//import backgroundImage from "./backgroundImage.jpg"
 function CadPais() {
     const navigate = useNavigate();
     return (

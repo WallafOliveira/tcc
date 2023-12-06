@@ -1,12 +1,12 @@
 import logo from './logo.png';
 import "./telaEstatisticas.css";
-import Carousel from "./carousel";
+//import Carousel from "./carousel";
 import imagem1 from "./kidsEsta.jpg";
-import React, { useState } from "react";
-import {useNavigate, useLocation} from "react-router-dom";
+import React, {/*useState*/} from "react";
+import {useNavigate, /*useLocation*/} from "react-router-dom";
 function TelaEstatisticas() {
   const navigate = useNavigate();
-  const location = useLocation();
+  //const location = useLocation();
   return (
     <div>
       <div>
